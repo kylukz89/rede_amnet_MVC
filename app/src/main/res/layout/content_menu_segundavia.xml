@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".View.View.MenuSegundaVia"
+    tools:showIn="@layout/app_bar_menu_segundavial">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="-10dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:elevation="15dp"
+            android:src="@drawable/allowaccess_button_normal" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayoutMsgLista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp">
+
+        <TextView
+            android:id="@+id/textViewMsgLista"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/relativeCamposFiltro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-18dp"
+        android:background="@color/colorPrimaryDark"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:singleLine="true">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:background="@color/colorTransparente"
+            android:backgroundTint="@color/colorCorBrancaDestaqueOpcao"
+            android:descendantFocusability="beforeDescendants"
+            android:drawableLeft="@drawable/ic_calendar_branco"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/colorCorBrancaDestaqueOpcao"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center|center_horizontal"
+            android:hint="De"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorCorBrancaDestaqueOpcao"
+            android:textColorHint="@color/colorCorBrancaDestaqueOpcao"
+            android:textSize="11sp" />
+
+
+        <EditText
+            android:id="@+id/editTextDataDe"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorCorBrancaDestaqueOpcao"
+            android:descendantFocusability="beforeDescendants"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/colorCorBrancaDestaqueOpcao"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorCorBrancaDestaqueOpcao"
+            android:textColorHint="@color/colorCorBrancaDestaqueOpcao"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:background="@color/colorTransparente"
+            android:backgroundTint="@color/colorCorBrancaDestaqueOpcao"
+            android:descendantFocusability="beforeDescendants"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/colorCorBrancaDestaqueOpcao"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center|center_horizontal"
+            android:hint="até"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorCorBrancaDestaqueOpcao"
+            android:textColorHint="@color/colorCorBrancaDestaqueOpcao"
+            android:textSize="11sp" />
+
+        <EditText
+            android:id="@+id/editTextDataAte"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@+id/editTextDataDe"
+            android:layout_toRightOf="@+id/editTextDataDe"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorCorBrancaDestaqueOpcao"
+            android:descendantFocusability="beforeDescendants"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/colorCorBrancaDestaqueOpcao"
+            android:focusable="false"
+            android:gravity="center"
+            android:focusableInTouchMode="true"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorCorBrancaDestaqueOpcao"
+            android:textColorHint="@color/colorCorBrancaDestaqueOpcao"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewTituloSegundaVia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeCamposFiltro"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="5dp"
+        android:paddingEnd="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:text="2ª Via das Faturas"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="12sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewFaturas"
+        android:layout_width="391dp"
+        android:layout_height="521dp"
+        android:layout_below="@id/textViewTituloSegundaVia"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:divider="@null"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="false"
+        android:padding="5dp"
+        android:paddingLeft="5dp"
+        android:paddingEnd="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:scrollbarSize="5dp"
+        android:smoothScrollbar="false"
+        android:splitMotionEvents="true"
+        android:visibility="visible"
+        tools:listitem="@layout/card_segvia_recyclerview">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <Button
+        android:id="@+id/buttonBotaoHistoricoPagamentos"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/btvoltar"
+        android:gravity="right"
+        android:layout_alignParentRight="true" />
+
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fab"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignLeft="10dp"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_gravity="bottom|end"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:layout_marginRight="30dp"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        app:elevation="6dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:pressedTranslationZ="12dp"-->
+<!--        android:contentDescription="TODO" />-->
+
+</RelativeLayout>
+
+
+
+

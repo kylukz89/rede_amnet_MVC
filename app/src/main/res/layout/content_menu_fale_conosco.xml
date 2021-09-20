@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".View.View.MenuFaleConosco"
+    tools:showIn="@layout/app_bar_menu_fale_conosco">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewWhatsappSAC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:focusableInTouchMode="true"
+                android:padding="15dp"
+                android:text="Whatsapp/SAC\n (18) 3702-7800\nRua Paes Leme, 1567 Centro - Cep: 16.901-010"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewValparaiso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewAndradina"
+                android:layout_marginTop="0dp"
+                android:focusableInTouchMode="true"
+                android:padding="15dp"
+                android:text="Valparaíso\n (18) 3401-2024\nAv. Luiz de Arruda, 20 - Centro - Cep: 16880-000"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewNovaIndependencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewValparaiso"
+                android:layout_marginTop="0dp"
+                android:focusableInTouchMode="true"
+                android:padding="15dp"
+                android:text="Nova Independência\n (18) 3744-9000\nAv. N. Senhor do Bonfim, 472, Centro - Cep: 16940-000"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewMirandopolis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewIlhaSolteira"
+                android:layout_marginTop="0dp"
+                android:focusableInTouchMode="true"
+                android:padding="15dp"
+                android:text="Mirandópolis\n (18) 3701-5914\nRua Gentil Moreira, 171, Centro - Cep: 16.800-000"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewLavinia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewItapura"
+                android:layout_marginTop="0dp"
+                android:focusableInTouchMode="true"
+                android:padding="15dp"
+                android:text="Lavínia\n (18) 3698-1725"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewItapura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewMirandopolis"
+                android:layout_marginTop="0dp"
+                android:focusableInTouchMode="true"
+                android:padding="15dp"
+                android:text="Itapura\n (18) 3745-0522"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewCastilho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewNovaIndependencia"
+                android:layout_marginTop="0dp"
+                android:focusableInTouchMode="true"
+                android:padding="15dp"
+                android:text="Castilho\n (18) 3741-9700\nRua Osório Junqueira, 834, Centro - Cep: 16.920-000"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewIlhaSolteira"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewCastilho"
+                android:layout_marginTop="0dp"
+                android:focusableInTouchMode="true"
+                android:padding="15dp"
+                android:text="Ilha Solteira\n (18) 3743-2769\nAv. Brasil Sul, 865 - Cep: 15.385-000"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/favicon"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/textViewAndradina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewWhatsappSAC"
+                android:layout_marginTop="0dp"
+                android:focusableInTouchMode="true"
+                android:padding="15dp"
+                android:text="Andradina\n (18) 3702-7800\nRua Paes Leme, 1567 Centro - Cep: 16.901-010"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewRubineia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewLavinia"
+                android:layout_marginTop="0dp"
+                android:focusableInTouchMode="true"
+                android:padding="15dp"
+                android:text="Rubinéia\n (17) 3661-1531\nRua Casimiro de Abreu, 452 Centro - Cep: 15.790-000"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <!-- ///////////////////////////////////////// -->
+
+            <TextView
+                android:id="@+id/textViewBentoAbreu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewRubineia"
+                android:layout_marginTop="0dp"
+                android:focusableInTouchMode="true"
+                android:padding="15dp"
+                android:text="Bento de Abreu\n 0800 772 7880\nRua Vinte e Sete de Março, 353, Centro, Bento de Abreu/SP - CEP 16790-000"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewPereiraBarreto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewBentoAbreu"
+                android:layout_marginTop="0dp"
+                android:focusableInTouchMode="true"
+                android:padding="15dp"
+                android:text="Pereira Barreto\n (18) 3704-6994\nAv. Brasil, 1225 - Centro, Pereira Barreto/SP, CEP 15370-000"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewRubiacea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewPereiraBarreto"
+                android:layout_marginTop="0dp"
+                android:focusableInTouchMode="true"
+                android:padding="15dp"
+                android:text="Rubiácea\n 0800 772 7880"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/textViewSantaFeSul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewRubiacea"
+                android:layout_marginTop="0dp"
+                android:focusableInTouchMode="true"
+                android:padding="15dp"
+                android:text="Santa Fé do Sul\n (17) 3641-2930"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewSantaSalete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewSantaFeSul"
+                android:layout_marginTop="0dp"
+                android:focusableInTouchMode="true"
+                android:padding="15dp"
+                android:text="Santa Salete\n (17) 99673-4228"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewSantanaPense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewSantaSalete"
+                android:layout_marginTop="0dp"
+                android:focusableInTouchMode="true"
+                android:padding="15dp"
+                android:text="Santana da Ponte Pensa\n (17) 99656-0178"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewGuaracai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewSantanaPense"
+                android:layout_marginTop="0dp"
+                android:focusableInTouchMode="true"
+                android:padding="15dp"
+                android:text="Guaraçaí\n (18) 3705-9301"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewMurutinga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewGuaracai"
+                android:layout_marginTop="0dp"
+                android:focusableInTouchMode="true"
+                android:padding="15dp"
+                android:text="Murutinga do Sul\n (18) 3705-9302"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewTresFronteiras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewMurutinga"
+                android:layout_marginTop="0dp"
+                android:focusableInTouchMode="true"
+                android:padding="15dp"
+                android:text="Três Fronteiras\n (17) 99656-0178"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/textViewTresLagoas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewTresFronteiras"
+                android:layout_marginTop="0dp"
+                android:focusableInTouchMode="true"
+                android:padding="15dp"
+                android:text="Três Lagoas\n (67) 3929-3100"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/textViewUrania"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewTresLagoas"
+                android:layout_marginTop="0dp"
+                android:focusableInTouchMode="true"
+                android:padding="15dp"
+                android:text="Urânia\n (17) 99673-4228"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

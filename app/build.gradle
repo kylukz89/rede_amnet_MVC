@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId 'com.rede.ncarede'
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 141
+        versionName '12.1'
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            lintOptions {
+                checkReleaseBuilds false
+                abortOnError false
+            }
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'com.github.anastr:speedviewlib:1.3.1'
+    implementation files('libs/achartengine-1.2.0.jar')
+    implementation 'com.github.judemanutd:autostarter:1.0.3'
+    implementation 'com.google.firebase:firebase-analytics:19.0.1'
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+    implementation 'com.google.firebase:firebase-core:19.0.1'
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    implementation 'com.github.mohammadatif:Animatoo:master'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation platform('com.google.firebase:firebase-bom:26.1.0')
+    implementation 'androidx.viewpager:viewpager:1.0.0'
+    implementation 'com.google.android.play:core:1.10.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+
+}
+apply plugin: 'com.google.gms.google-services'

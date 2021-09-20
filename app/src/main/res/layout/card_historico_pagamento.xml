@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/android_list_view_tutorial_with_example"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:background="@color/colorCorBrancaDestaqueOpcao"
+    >
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewBolinhaTituloPago"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="72.99dp"
+            android:layout_marginLeft="73dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="-10dp"
+            android:elevation="3dp"
+            app:cardCornerRadius="7dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewLinhaHistorico"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="79.5dp"
+            android:layout_marginLeft="79.5dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="-50dp"
+            android:elevation="2dp"
+            app:cardCornerRadius="5dp"/>
+
+
+        <ImageView
+            android:id="@+id/imageViewHistoricoIcone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11.5dp"
+            android:layout_marginLeft="11.5dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/ic_fatura_verde" />
+
+        <TextView
+            android:id="@+id/textViewCodigoAutorizacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="101dp"
+            android:layout_marginLeft="101dp"
+            android:layout_marginTop="62dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_vertical"
+            android:text="987155"
+            android:textColor="@color/colorIconesMenu"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/listViewVencimentoTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="101dp"
+            android:layout_marginLeft="101dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/roboto_bold"
+            android:paddingTop="5dp"
+            android:text="16/03/2019 (82)"
+            android:textColor="@color/colorIconesMenu"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewValorPago"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="101dp"
+            android:layout_marginLeft="101dp"
+            android:layout_marginTop="81dp"
+            android:fontFamily="sans-serif"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:text="R$ 0.000,00"
+            android:textColor="?android:attr/textColorPrimaryNoDisable"
+            android:textSize="10sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/textViewTipoPagamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="101dp"
+            android:layout_marginLeft="101dp"
+            android:layout_marginTop="37dp"
+            android:fontFamily="@font/roboto_bold"
+            android:paddingTop="5dp"
+            android:text="Crédito"
+            android:textColor="@color/colorIconesMenu"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDataPagamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/roboto_bold"
+            android:paddingTop="5dp"
+            android:text="14:35pm"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageViewDownloadComprovante"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="315dp"
+            android:layout_marginLeft="315dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_download_comprovante" />
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView8"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginStart="283dp"-->
+<!--            android:layout_marginLeft="283dp"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:layout_marginBottom="41dp"-->
+<!--            android:drawableRight="@drawable/ic_down_comp"-->
+<!--            app:drawableTint="#777777" />-->
+</RelativeLayout>

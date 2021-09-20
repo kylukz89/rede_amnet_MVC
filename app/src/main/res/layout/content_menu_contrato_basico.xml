@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".View.View.MenuDadosPlano"
+    tools:showIn="@layout/app_bar_menu_contrat_basico">
+
+
+
+    <!-- CHECKS DAS CLÁUSULAS CONTRATUAIS QUE CLIENTE DEVE CONCORDAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:drawableTop="@drawable/ic_contract"
+            android:gravity="center"
+            android:text="DECLARO-ME CIENTE DOS TERMOS"
+            android:textColor="?attr/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxContrato1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="A migração de planos de serviços contratados modificará a contagem do prazo de permanência pelo período mínimo de 12 (doze) meses." />
+
+        <CheckBox
+            android:id="@+id/checkBoxContrato2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="Esclarecemos que para obter a melhor experiência de navegação de internet de bandas superiores a 120 Mbps é orientado a utilização do Roteador Wireless Gigabit Dual Band Ac1200." />
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/checkBoxContrato3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Esclarecemos que para obter a melhor experiência de navegação de internet de bandas superiores a 120 Mbps é orientado a utilização do Roteador Wireless Gigabit Dual Band Ac1200." />-->
+    </LinearLayout>
+
+
+
+
+
+
+    <com.google.android.material.circularreveal.CircularRevealGridLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/textViewRecusarContrato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextContrato"
+            android:gravity="center"
+            android:text="Recusar"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:layout_marginLeft="11dp" />
+
+        <TextView
+            android:id="@+id/textViewAceitarContrato"
+            android:layout_width="67dp"
+            android:layout_height="24dp"
+            android:layout_below="@+id/editTextContrato"
+            android:layout_gravity="right"
+            android:layout_marginRight="11dp"
+            android:gravity="center"
+            android:enabled="false"
+            android:focusable="false"
+            android:text="Aceitar"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+    </com.google.android.material.circularreveal.CircularRevealGridLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+

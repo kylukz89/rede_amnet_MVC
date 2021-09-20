@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".View.View.MenuPrincipal"
+    tools:showIn="@layout/app_bar_menu_menuprincipal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linerPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textviewNomeCliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/nome_cliente"
+                    android:drawablePadding="10dp"
+                    android:drawingCacheQuality="high"
+                    android:gravity="center"
+                    android:text="Developer"
+                    android:textColor="@color/colorCorBrancaDestaqueOpcao"
+                    android:textColorLink="@color/colorPadraoCinzaBotoesAux"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerviewRoleta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewTituloExtratoFinanceiro"
+                    android:layout_alignParentBottom="false"
+                    android:divider="@null"
+                    android:fadeScrollbars="false"
+                    android:fastScrollEnabled="false"
+                    android:orientation="horizontal"
+                    android:overScrollMode="never"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scrollbars="none"
+                    android:visibility="visible"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/card_roleta_planos">
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewRoletaBotoesMenu"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@id/textViewTituloExtratoFinanceiro"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:divider="@null"
+                android:elevation="0dp"
+                android:fastScrollAlwaysVisible="true"
+                android:fastScrollEnabled="true"
+                android:orientation="horizontal"
+                android:scrollbarSize="5dp"
+                android:smoothScrollbar="false"
+                android:visibility="visible"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/card_botao_minhaconta_padrao_menuprincipal">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

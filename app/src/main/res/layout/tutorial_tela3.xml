@@ -1,0 +1,49 @@
+<!-- fragment_edit_name.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F6F6F6"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:text="Nova Central do Assinante"
+        android:textAlignment="center"
+        android:textColor="@color/colorIconeAzulNubank"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="30dp"
+        android:text="Você pode habilitar provisoriamente um plano suspenso por débito."
+        android:textAlignment="center"
+        android:textColor="@color/colorIconesMenu"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/wifi" />
+
+    <TextView
+        android:id="@+id/botaoProximo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="PRÓXIMO"
+        android:textColor="@color/colorAccent" />
+
+
+</LinearLayout>

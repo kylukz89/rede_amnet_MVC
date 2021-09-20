@@ -1,0 +1,56 @@
+<!-- fragment_edit_name.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F6F6F6"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:text="Escolha o Vencimento"
+        android:textAlignment="center"
+        android:textColor="@color/colorIconeAzulNubank"
+        android:textSize="20dp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:justificationMode="inter_word"
+        android:text="Escolha o novo dia de vencimento do plano"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spinnerComboDiasVencimentoPlanoEscolhido"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="4dp"
+        android:hint="Escolha um plano" />
+
+
+    <TextView
+        android:id="@+id/botaoSetarVencimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="10dp"
+        android:paddingRight="10dp"
+        android:text="OK, ALTERAR MEU PLANO"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

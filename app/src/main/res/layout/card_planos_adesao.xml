@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/android_list_view_tutorial_with_example"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_margin="7dp"
+    android:orientation="horizontal"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:cardMaxElevation="5dp">
+
+
+    <TextView
+        android:id="@+id/nomeVenderPlano"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPadraoCinzaBotoesAux"
+        android:gravity="center"
+        android:text="Fibra Rede 120\nResidencial"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="357dp"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            app:cardBackgroundColor="@color/colorIconeAzulNubank"
+            app:cardElevation="3dp"
+            app:cardMaxElevation="3dp"
+            app:cardPreventCornerOverlap="false">
+
+
+            <TextView
+                android:id="@+id/valorAdesaoVenderPlano"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Instalação Isenta *"
+                android:textColor="@color/colorCorBrancaDestaqueOpcao"
+                android:textStyle="bold" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingLeft="20dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nomeVenderTecnologia"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/ic_adesao_alerta"
+                android:gravity="center_vertical"
+                android:text=" Fibra Óptica"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/nomeVenderDownload"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/ic_adesao_download"
+                android:gravity="center_vertical"
+                android:text=" 120 Mbp/s de download"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/nomeVenderUpload"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/ic_adesao_upload"
+                android:gravity="center_vertical"
+                android:text=" 60 Mbp/s de download"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textViewIPv4"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/ic_adesao_ipv4"
+                android:gravity="center_vertical"
+                android:text=" IPv4 Dinâmico"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/nomeVenderValorPlano"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="40dp"
+        android:background="@color/colorPadraoCinzaBotoesAux"
+        android:gravity="center"
+        android:text="R$ 79,90 /mês\n(cobrado na fatura do cartão)"
+        android:textColor="#000"
+        android:textSize="24sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutAderirPlanoAlteracao"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="160dp"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewValorPlanoAdesao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:contentDescription="@android:string/VideoView_error_title"
+            android:drawableStart="@drawable/ic_atualizar_plano"
+            android:fontFamily="sans-serif"
+            android:gravity="fill_vertical"
+            android:text="ALTERAR JÁ"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/colorCorBrancaDestaqueOpcao"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textViewFaixaLateralDifAdesao"
+        android:layout_width="5dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="200dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif-light"
+        android:text=" " />
+
+    <TextView
+        android:id="@+id/textViewFaixaLateral"
+        android:layout_width="5dp"
+        android:layout_height="200dp"
+        android:background="@color/colorIconeAzulNubank"
+        android:fontFamily="sans-serif-light"
+        android:text=" " />
+
+
+</androidx.cardview.widget.CardView>

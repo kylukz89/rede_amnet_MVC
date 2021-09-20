@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".View.View.MenuDadosPlano"
+    tools:showIn="@layout/app_bar_menu_dados_plano">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="430dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextStatusPlano"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="  Status do Plano"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLetraPreta"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextNomePlano"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="  Nome do Plano"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLetraPreta"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editTextEnderecoInstalacao"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="  Endereço de Instalação"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLetraPreta"
+                android:textSize="12sp" />
+
+
+            <EditText
+                android:id="@+id/editTextBairroInstalacao"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="  Bairro de Instalação"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLetraPreta"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editTextCEPInstalacao"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="  CEP de Instalação"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLetraPreta"
+                android:textSize="12sp" />
+
+<!--            <EditText-->
+<!--                android:id="@+id/editTextBairroCobranca"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:hint="Bairro de Cobrança"-->
+<!--                android:textAlignment="gravity"-->
+<!--                android:textColor="@color/colorLetraPreta"-->
+<!--                android:textSize="12sp" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/editTextEnderecoCobranca"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:hint="  Endereço de Cobrança"-->
+<!--                android:textAlignment="gravity"-->
+<!--                android:textColor="@color/colorLetraPreta"-->
+<!--                android:textSize="12sp" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/editTextCEPCobranca"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:hint="  CEP de Cobrança"-->
+<!--                android:textAlignment="gravity"-->
+<!--                android:textColor="@color/colorLetraPreta"-->
+<!--                android:textSize="12sp" />-->
+
+
+            <EditText
+                android:id="@+id/editTextCidade"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="  Cidade"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLetraPreta"
+                android:textSize="12sp" />
+
+
+            <EditText
+                android:id="@+id/editTextVencimento"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="  Vencimento"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLetraPreta"
+                android:textSize="12sp" />
+
+
+            <EditText
+                android:id="@+id/editTextValorFinal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="  Valor Final"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLetraPreta"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewRoletaBotoesDadosPlano"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:divider="@null"
+        android:fastScrollAlwaysVisible="true"
+        android:fastScrollEnabled="true"
+        android:orientation="horizontal"
+        android:scrollbarSize="1dp"
+        android:smoothScrollbar="false"
+        android:visibility="visible"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/card_botao_dados_plano">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
+
+
+
+

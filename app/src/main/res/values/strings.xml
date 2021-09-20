@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Meu Americanet.RedeTelecom</string>
+    <string name="title_activity_menu_conta"></string>
+    <string name="default_notification_channel_id" />
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Rede Telecom</string>
+    <string name="nav_header_subtitle">(18) 3702-7800</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Configurações</string>
+    <string name="action_sair">Encerrar Sessão/Sair</string>
+    <string name="title_activity_menu_x">MenuX</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Transações MSGs -->
+    <string name="action_transacao_autorizada">Transação Autorizada!</string>
+    <string name="action_transacao_negada">Transação Negada!</string>
+
+    <string name="start">Processar..</string>
+    <string name="title_activity_scrolling">Rede Telecom</string>
+    <string name="large_text" formatted="true" translatable="true">
+        "\n\n"
+        "  Há mais de duas décadas, a Rede Telecom conecta você com o que realmente importa. Com sede na cidade de Andradina (SP), a operadora oferece serviços de acesso à internet para os moradores da cidade e também para toda a região. Atualmente, a Rede também está presente nas cidades de Castilho, Ilha Solteira, Itapura, Lavínia, Mirandopólis, Nova Independência, Pereira Barreto e Valparaíso.\n\n"
+        "  E estar próximo dos seus clientes é o que torna a Rede Telecom diferente das demais operadoras. E você sabe por que? A resposta é muita simples: a proximidade com os clientes torna o atendimento prestado pela Rede muito mais humanizado.\n\n"
+        "  Com atuação na área de telecomunicações, a Rede Telecom conta com um time de colaboradores que acreditam que a conexão, muito mais que um acesso à internet, é um laço capaz de ligar, ainda mais, as pessoas. Justamente por isso, oferece pacotes flexíveis que atendem às necessidades de vários perfis de clientes. Também disponibiliza um suporte técnico muito mais presente.\n\n"
+        "  Provedores de internet regionais, como a Rede Telecom, mantêm proximidade com a realidade local, o que permite uma prática de preços justos, já que os serviços são formatados para atender a real necessidade daquela cidade. Além disso, também é importante destacar que existe muito mais transparência em relação aos serviços prestados.\n\n"
+        "  A Rede Telecom se dedicada para que os clientes tenham grande satisfação e se sintam muito confortáveis com nosso apoio e cuidado. Justamente por isso, se tornou referência na área de telecomunicações, atendimento e fornecimento do acesso à internet, proporcionando uma conexão de qualidade que traz acesso à informação, tecnologia e diversão. Tudo isso através do mundo digital.\n\n
+        \n\n \n\n _____________________________________________\n\nSuporte/Dev.: igor.maximo@redetelecom.com.br"
+
+
+    </string>
+
+    <string name="textoContratoBasicoAlteracaoPlano" formatted="true" translatable="true">
+        "CONDIÇÕES GERAIS
+O CONTRATANTE ADERENTE declara, para os devidos fins, que; i) teve conhecimento prévio do “Contrato de Prestação de Serviços de Comunicação Multimídia”, o qual encontra-se devidamente registrado no Cartório de Registro de Títulos e Documentos das Pessoas Jurídicas de Andradina/SP, sob o número 22.594, livero B-85 e fls 001, bem como disponível no site da REDE TELECOM, ii), são corretos os dados cadastrais e informações por mim prestadas neste instrumento. O CONTRATANTE ADERENTE tem ciência que a) a não devolução dos equipamentos cedidos em comodato e/ou locação, no prazo de até 15 (quinze) dias, após a extinção do contrato, implica na cobrança de multa de R$ 299,00 (duzentos e noventa e nove reais); b) Os Serviços poderão ser suspensos pela REDE TELECOM em caso de inadimplemento por parte do CONTRATANTE ADERENTE. A REDE TELECOM notificará o CONTRATANTE ADERENTE inadimplente, com antecedência mínima de 5 (cinco) dias, acerca da suspensão da prestação do Serviço. c) No caso de manutenção da situação de inadimplência, a REDE TELECOM poderá rescindir o Contrato depois de transcorridos 30 (trinta) dias da suspensão dos serviços. d) Além das formas descritas acima, o Contrato poderá ser rescindido, a qualquer tempo, independente de notificação, nas seguintes hipóteses :i) Extinção da autorização outorgada à REDE TELECOM para a prestação do Serviço contratado. ii) Falecimento, decretação de falência, recuperação judicial, dissolução judicial ou extrajudicial de qualquer das partes deste contrato. iii) Se as partes de comum acordo, optarem pela rescisão antecipada do Contrato, observadas as penalidades no contrato firmado com FIDELIDADE. iv) Pela REDE TELECOM na hipótese de descumprimento pelo CONTRATANTE ADERENTE de suas obrigações contratuais, legais ou regulamentares quanto a utilização do Serviço, inclusive, de forma fraudulenta ou com o propósito de lesar terceiros ou a própria REDE TELECOM. v) Em caso de descontinuidade do Plano de Serviço prestado pela REDE TELECOM, facultando ao CONTRATANTE ADERENTE a migração para outro Plano de Serviço da sua escolha. e)O não pagamento do documento de cobrança, total ou parcial, até a data de vencimento, gerará ao CONTRATANTE ADERENTE, a partir do dia seguinte ao do vencimento, sobre o valor total do documento, a aplicação de cobrança de:  (i) multa de 2% (dois por cento) sobre o valor devido; (ii) correção monetária apurada, segundo a variação do IGP-M, ou outro índice que o substitua, desde a data do vencimento até a data da efetiva liquidação; e (iii) juros de mora de 0,13% (treze centésimos porcento) ao dia, calculados pro rata die, desde a data do vencimento até a data da efetiva liquidação (iv) O encaminhamento do CONTRATANTE ADERENTE para os Serviços de Proteção ao Crédito, como por exemplo, mas não se limitando, ao SPC e SERASA (v) outras penalidades previstas em Lei e no presente Contrato, sem prejuízo de indenização por danos suplementares. A assinatura deste TERMO DE ADESÃO significa sua concordância irrestrita, sem reservas de qualquer natureza, com os seus termos e com o “Contrato de Prestação de serviços de comunicação multimídia”."
+    </string>
+
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="tab_text_1">01</string>
+    <string name="tab_text_2">02</string>
+    <string name="tab_text_3">03</string>
+    <string name="tab_text_4">04</string>
+    <string name="tab_text_5">05</string>
+    <string name="tab_text_6">06</string>
+    <string name="tab_text_7">07</string>
+    <string name="tab_text_8">08</string>
+    <string name="tab_text_9">09</string>
+    <string name="tab_text_10">10</string>
+    <string name="tab_text_11">11</string>
+    <string name="tab_text_12">12</string>
+    <string name="section_format"> %1$d</string>
+    <string name="chooser_title">Teste</string>
+
+
+    <string name="msg_start_app_info">iniciando serviço com AlarmManager</string>
+    <string name="msg_start_service_on_create">Iniciando onCreate MyIntentService</string>
+    <string name="msg_start_service_on_handle_intent">Iniciando onHandleIntent MyIntentService</string>
+
+    <!-- LABEL -->
+    <string name="label_progress">Progresso</string>
+    <string name="label_message">Mensagem</string>
+    <string name="label_finished">Finalizado</string>
+
+    <!-- BTN -->
+    <string name="btn_start_service">Iniciar Serviço</string>
+    <string name="btn_stop_service">Parar Serviço</string>
+    <string name="title_activity_scrolling_contrato_basico">Contrato de Mudança</string>
+
+
+</resources>

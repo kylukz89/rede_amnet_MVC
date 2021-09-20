@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="#EFEDED"
+    tools:context=".View.View.MenuAtendimento"
+    tools:showIn="@layout/app_bar_menu_atendimento">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="-10dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="-7dp"
+            android:elevation="15dp"
+            android:src="@drawable/allowaccess_button_normal" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayoutMsgLista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp">
+
+        <TextView
+            android:id="@+id/textViewMsgLista"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewListaTiposAtendimentos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:focusable="true"
+        android:nestedScrollingEnabled="false"
+        android:paddingBottom="45dp"
+        android:layout_marginBottom="5dp"
+        android:windowSoftInputMode="stateHidden|adjustPan"
+        app:layoutManager="LinearLayoutManager"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</RelativeLayout>

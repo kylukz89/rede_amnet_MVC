@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/android_list_view_tutorial_with_example"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+                <TextView
+                    android:id="@+id/cardStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="150dp"
+                    android:fontFamily="@font/rosario"
+                    android:paddingTop="5dp"
+                    android:text="Em Aberto"
+                    android:textColor="@color/colorIconesMenu"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cardNomePlano"
+                    android:layout_width="259dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/rosario"
+                    android:shadowColor="@color/colorPrimaryDark"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:text="(1) Plano Fibra 100Mb"
+                    android:textSize="12sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/textViewFaixaLateralDif"
+                    android:layout_width="5dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="100dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text=" " />
+
+                <ImageView
+                    android:id="@+id/cardIcone"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/cardValor"
+                    android:layout_width="259dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/rosario"
+                    android:shadowColor="@color/colorPrimaryDark"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:text="R$ 0.000,00"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/cardVencimento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="70dp"
+                    android:fontFamily="@font/rosario"
+                    android:paddingTop="5dp"
+                    android:text="16/03/2019 (82)"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cardValorPago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="100dp"
+                    android:fontFamily="@font/rosario"
+                    android:paddingTop="5dp"
+                    android:text="Valor Pago R$ 0,00"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/cardSaldo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="125dp"
+                    android:fontFamily="@font/rosario"
+                    android:paddingTop="5dp"
+                    android:text="Saldo R$ 0,00"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/textViewFaixaLateral"
+                    android:layout_width="5dp"
+                    android:layout_height="100dp"
+                    android:background="@color/colorIconeAzulNubank"
+                    android:text=" " />
+
+                <!--
+                <TextView
+                    android:id="@+id/textViewDetalhesFatura"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="150dp"
+                    android:background="@drawable/border_opcao_destacada_detalhes_fatura"
+                    android:drawableStart="@drawable/ic_detalhes_fatura"
+                    android:drawableEnd="@drawable/ic_detalhes"
+                    android:drawingCacheQuality="high"
+                    android:padding="12dp"
+                    android:text="Detalhes dos serviços desta fatura"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorIconesMenu"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+                -->
+
+        </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>

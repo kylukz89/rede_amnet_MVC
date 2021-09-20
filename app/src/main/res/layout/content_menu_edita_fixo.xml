@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".App.View.MenuEditaFixo"
+    tools:showIn="@layout/app_bar_menu_edita_fixo">
+
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonBotaoMenuMinhaConta"-->
+<!--        android:layout_width="60dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:background="@drawable/btvoltar"-->
+<!--        android:gravity="right" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:foregroundGravity="center_horizontal"
+                android:gravity="center"
+                android:text="Editor de Contato" />
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/editTextFone01"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:drawableStart="@drawable/ic_fone"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorIconesMenu"
+                    android:editable="true"
+                    android:enabled="true"
+                    android:focusable="true"
+                    android:hint="Telefone 01"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorLetraPreta"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/editTextFone02"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:drawableStart="@drawable/ic_fone"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorIconesMenu"
+                    android:editable="true"
+                    android:enabled="true"
+                    android:focusable="true"
+                    android:hint="Telefone 02"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorLetraPreta"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/editTextFone03"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:drawableStart="@drawable/ic_fone"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorIconesMenu"
+                    android:editable="true"
+                    android:enabled="true"
+                    android:focusable="true"
+                    android:hint="Telefone 03"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorLetraPreta"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/editTextFone04"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:drawableStart="@drawable/ic_fone"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorIconesMenu"
+                    android:editable="true"
+                    android:enabled="true"
+                    android:focusable="true"
+                    android:hint="Telefone 04"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorLetraPreta"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:drawableStart="@drawable/ic_arroba"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorIconesMenu"
+                    android:editable="true"
+                    android:enabled="true"
+                    android:focusable="true"
+                    android:hint="E-mail"
+                    android:inputType="text"
+                    android:maxLength="150"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorLetraPreta"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linearBotaoEditar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/spinnerComboPlanosSuspensos"
+                android:layout_alignParentLeft="false"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toEndOf="@+id/editTextDataAte"
+                android:layout_toRightOf="@+id/editTextDataAte"
+                android:background="@drawable/border_shadow_botoes_normais"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/imageButtonPagar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:foregroundGravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="EDITAR"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorCorBrancaDestaqueOpcao"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+
+
+

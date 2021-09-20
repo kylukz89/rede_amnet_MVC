@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="10dp">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutAbrirLink"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/main_header_selector_roleta"
+        android:clickable="true"
+        app:cardElevation="0dp"
+        tools:ignore="MissingPrefix">
+
+
+        <TextView
+            android:id="@+id/textViewUsuarioAppTV"
+            android:layout_width="273dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="90dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="57dp"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/roboto_bold_"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="987654321"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewAppSenhaTV"
+            android:layout_width="273dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="90dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="84dp"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/roboto_bold_"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="A98a4s98"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewEnderecoInstalacao"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="58dp"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/roboto_bold_"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="Usuário:"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/colorIconesMenu"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewEnderecoInstalacao2"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="86dp"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/roboto_bold_"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="Senha:"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/colorIconesMenu"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewNomePlataforma"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="23dp"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/roboto_bold_"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="Plataforma"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageViewFatura"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="131dp"
+            android:layout_marginRight="165dp"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/ic_tv_grande" />
+
+        <TextView
+            android:id="@+id/textViewFaixaLateralDifRoleta"
+            android:layout_width="4.85dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="75dp"
+            android:background="#888"
+            android:fontFamily="sans-serif-light"
+            android:elevation="1dp"
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/textViewFaixaLateral"
+            android:layout_width="5dp"
+            android:layout_height="75dp"
+            android:background="#aaa"
+            android:fontFamily="sans-serif-light"
+            android:text=" " />
+
+
+        <TextView
+            android:id="@+id/textViewDescricaoTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="124dp"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/roboto_bold_"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="ideal para você assistir com sua família"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/colorIconesMenu"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

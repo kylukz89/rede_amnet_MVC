@@ -1,0 +1,53 @@
+<!-- fragment_edit_name.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F6F6F6"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:text="Nova Central do Assinante"
+        android:textAlignment="center"
+        android:textColor="@color/colorIconeAzulNubank"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:justificationMode="inter_word"
+        android:text="Com o novo aplicativo da central do assinante da Rede Telecom, você pode realizar o pagamento de suas faturas com cartão, realizar habilitação provisória de planos suspensos por débito e consultar extratos financeiros e de conexões."
+        android:textAlignment="center"
+        android:textColor="@color/colorIconesMenu"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tuto1" />
+
+    <TextView
+        android:id="@+id/botaoProximo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="10dp"
+        android:paddingRight="10dp"
+        android:text="OK, ENTENDI"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

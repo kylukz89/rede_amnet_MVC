@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/android_list_view_tutorial_with_example"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="10dp"
+    app:cardMaxElevation="20dp"
+    app:cardCornerRadius="15dp">
+
+
+    <RelativeLayout
+        android:id="@+id/cardCartaoRecorrente"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/gradient_cartao_recorrente"
+        app:cardElevation="0dp"
+        tools:ignore="MissingPrefix">
+
+        <ImageView
+            android:id="@+id/imageViewBandeiraRecorrente"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="46dp" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="70dp"
+            app:srcCompat="@drawable/pngchip" />
+
+        <TextView
+            android:id="@+id/textViewVencimentoCartaoRecorrente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="172dp"
+            android:layout_marginEnd="66dp"
+            android:layout_marginRight="66dp"
+            android:layout_toRightOf="@+id/imageViewFatura"
+            android:fontFamily="@font/pt_mono"
+            android:gravity="left"
+            android:text="12/2021"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/colorDegradeButton1"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textViewNumeroCartaoRecorrente"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:fontFamily="@font/pt_mono"
+            android:gravity="left"
+            android:text="**** **** **** 1567"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/colorDegradeButton1"
+            android:textColorHint="@color/colorCorBrancaDestaqueOpcao"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewNomeCartaoRecorrente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginRight="68dp"
+            android:fontFamily="@font/pt_mono"
+            android:gravity="left"
+            android:text="John Doe da Silva"
+            android:textColor="@color/colorDegradeButton1"
+            android:textColorHint="@color/colorCorBrancaDestaqueOpcao"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

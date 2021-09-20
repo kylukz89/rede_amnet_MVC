@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/android_list_view_tutorial_with_example"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    app:cardCornerRadius="10dp"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/cardRoleta"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:background="@color/colorCorBrancaDestaqueOpcao"
+            android:clickable="true"
+            app:cardElevation="0dp"
+            tools:ignore="MissingPrefix">
+
+
+            <TextView
+                android:id="@+id/textViewVencimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="39dp"
+                android:layout_marginLeft="-240dp"
+                android:layout_marginTop="195dp"
+                android:layout_marginEnd="44dp"
+                android:layout_marginRight="44dp"
+                android:layout_toRightOf="@+id/imageViewFatura"
+                android:fontFamily="sans-serif-light"
+                android:text="Desconto na cobrança: Desconto de R$ 10,00 no pagamento da mensalidade com cartão de crédito ou boleto digital até a data de vencimento."
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/colorIconesMenu"
+                android:textSize="14sp" />
+
+            <!--<TextView
+                android:id="@+id/textViewVencimento"
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="175dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Vencimento 10/04/2019 (-5)"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorIconesMenu"
+                android:textSize="16sp" /> -->
+
+            <ImageView
+                android:id="@+id/imageViewFatura"
+                android:layout_width="160dp"
+                android:layout_height="68dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="119dp"
+                android:layout_marginLeft="171dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="119dp"
+                android:layout_marginRight="165dp"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_add_novo" />
+
+            <TextView
+                android:id="@+id/textViewStatusPlano"
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="39dp"
+                android:layout_marginTop="78dp"
+                android:layout_marginEnd="40dp"
+                android:gravity="center"
+                android:text="ADD Novo Plano"
+                android:textColor="@color/colorBotaoPagar2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewEnderecoInstalacao"
+                android:layout_width="316dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="-239dp"
+                android:layout_marginTop="124dp"
+                android:layout_marginEnd="43dp"
+                android:layout_marginRight="43dp"
+                android:layout_toRightOf="@+id/imageViewFatura"
+                android:fontFamily="sans-serif-light"
+                android:text="Garantia de banda: 60% (A garantia de banda é o valor mínimo de velocidade da conexão, em relação ao máximo contratado)."
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/colorIconesMenu"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="356dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginEnd="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginBottom="124dp"
+                android:ems="10"
+                android:enabled="false"
+                android:focusable="false"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+
+        </RelativeLayout>
+
+
+   <!--     <TextView
+            android:id="@+id/textViewFaixaLateralDif"
+            android:layout_width="5dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="160dp"
+            android:background="@color/colorPrimaryLight"
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/textViewFaixaLateral"
+            android:layout_width="5dp"
+            android:layout_height="160dp"
+            android:background="@color/colorIconesMenu"
+            android:text=" " />
+-->
+
+</androidx.cardview.widget.CardView>

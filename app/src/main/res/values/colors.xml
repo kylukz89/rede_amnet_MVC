@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#173DAA</color>
+    <color name="colorPrimaryDark">#173DAA</color>
+    <color name="colorAccent">#173DAA</color>
+    <color name="colorBotaoMenuPrincipal">#006AB4</color>
+    <color name="colorPrimaryLight">#1E4EAF</color>
+    <color name="colorIconeAzulNubank">#0268C7</color>
+    <color name="colorPadraoCinzaPadrao">#DDDDDD</color>
+    <color name="colorLetraPreta">#222222</color>
+    <color name="colorCorBrancaDestaqueOpcao">#FFFFFF</color>
+    <color name="colorIconesMenu">#777777</color>
+    <color name="colorPadraoCinzaClaro">#CCCCCC</color>
+    <color name="colorPadraoCinzaChumbo">#AAAAAA</color>
+    <color name="colorPadraoCinzaBotoesAux">#EEEEEE</color>
+    <color name="colorDegradeButton1">#FFFFFF</color>
+    <color name="colorDegradeButton2">#DDDDDD</color>
+    <color name="colorBotaoPagar1">#32CD32</color>
+    <color name="colorBotaoPagar2">#228B22</color>
+    <color name="colorTransparente">#00000000</color>
+    <color name="colorFaturaVerde">#228B22</color>
+    <color name="colorFaturaLaranja">#FFA500</color>
+    <color name="colorLaranjaClara">#FFE8CF</color>
+    <color name="colorFaturaVermelha">#FF0000</color>
+    <color name="colorVermelhoEscuro">#800000</color>
+</resources>

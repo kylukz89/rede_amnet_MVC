@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_webview_internet_banking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+    android:fitsSystemWindows="true"
+    tools:context="com.rede.App.View.View.MenuSegundaVia">
+
+
+    <WebView
+        android:id="@+id/webViewInternetBanking"
+        android:layout_width="304dp"
+        android:layout_height="594dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_marginBottom="67dp"
+        android:shadowColor="#111"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5" />
+
+
+</RelativeLayout>
+

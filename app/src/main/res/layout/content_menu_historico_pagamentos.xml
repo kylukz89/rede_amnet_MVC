@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/colorCorBrancaDestaqueOpcao"
+    tools:context=".View.View.MenuHistoricoPagamento"
+    tools:showIn="@layout/app_bar_menu_historico_pagamentos">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewHistoricoPagamento"
+        android:layout_width="391dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp"
+        android:divider="@null"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="false"
+        android:padding="5dp"
+        android:paddingLeft="5dp"
+        android:paddingEnd="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:scrollbarSize="5dp"
+        android:smoothScrollbar="false"
+        android:splitMotionEvents="true"
+        android:visibility="visible"
+        tools:listitem="@layout/card_historico_pagamento">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:foregroundGravity="center_vertical|clip_horizontal|clip_vertical|center_horizontal"
+        android:gravity="center"
+        android:text="Histórico"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fab"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignLeft="10dp"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_gravity="bottom|end"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:layout_marginRight="30dp"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        app:elevation="6dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:pressedTranslationZ="12dp"-->
+<!--        android:contentDescription="TODO" />-->
+
+</RelativeLayout>
+
+
+
+

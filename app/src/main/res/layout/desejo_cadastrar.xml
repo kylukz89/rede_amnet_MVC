@@ -1,0 +1,57 @@
+<!-- fragment_edit_name.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F6F6F6"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:text="Rede Telecom"
+        android:textAlignment="center"
+        android:textColor="@color/colorIconeAzulNubank"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:justificationMode="inter_word"
+        android:text="Detectamos que você ainda não é nosso cliente, gostaria de realizar um cadastro gratuito para utilizar algumas de nossas funcionalidades disponíveis sem compromisso?"
+        android:textAlignment="center"
+        android:textColor="@color/colorIconesMenu"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/botaoNaoCadstrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="10dp"
+        android:paddingRight="10dp"
+        android:text="AGORA NÃO"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/botaoDesejoMeCadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="10dp"
+        android:paddingRight="10dp"
+        android:text="OK, QUERO ME CADASTRAR"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

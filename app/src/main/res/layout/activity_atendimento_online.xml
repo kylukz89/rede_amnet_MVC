@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cadastrao_potencial_cliente"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logintelapng"
+    android:orientation="vertical"
+    android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+    android:fitsSystemWindows="true"
+    android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+    tools:context=".View.View.AtendimentoOnlineWebViewActivity">
+
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shadowColor="#111"
+        android:isScrollContainer="false"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:windowSoftInputMode="adjustResize"
+        android:shadowRadius="5" />
+
+
+</RelativeLayout>
+

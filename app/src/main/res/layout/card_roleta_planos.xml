@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/android_list_view_tutorial_with_example"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:orientation="vertical"
+    android:padding="5dp"
+    app:cardCornerRadius="10dp">
+
+
+    <RelativeLayout
+        android:id="@+id/cardRoletaPlano"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@drawable/main_header_selector_roleta"
+        android:clickable="true"
+        app:cardElevation="0dp"
+        tools:ignore="MissingPrefix">
+
+
+        <TextView
+            android:id="@+id/textViewFaixaLateralDifRoleta"
+            android:layout_width="4.85dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="160dp"
+            android:background="#888"
+            android:fontFamily="sans-serif-light"
+            android:elevation="1dp"
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/textViewFaixaLateral"
+            android:layout_width="5dp"
+            android:layout_height="160dp"
+            android:background="#aaa"
+            android:fontFamily="sans-serif-light"
+            android:text=" " />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutDetalhesPlano"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="260dp"
+            android:background="@drawable/main_header_selector"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/textViewVisualizarPlano"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="false"
+                android:background="#00000000"
+                android:contentDescription="@android:string/VideoView_error_title"
+                android:drawableTint="#000000"
+                android:drawableLeft="@drawable/ic_detalhes_plano"
+                android:drawableRight="@drawable/ic_abrir_plano"
+                android:fontFamily="@font/roboto_bold_"
+                android:gravity="fill_vertical"
+                android:padding="1dp"
+                android:text="Clique para detalhes do plano"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <!--<TextView
+                android:id="@+id/textViewVencimento"
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="175dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Vencimento 10/04/2019 (-5)"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorIconesMenu"
+                android:textSize="16sp" /> -->
+
+        <TextView
+            android:id="@+id/textViewVencimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="231dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginRight="65dp"
+            android:layout_toRightOf="@+id/imageViewFatura"
+            android:fontFamily="@font/roboto_thin"
+            android:text="Vencimento 10/04/2019"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#111111"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewEnderecoInstalacao"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="-40dp"
+            android:layout_marginTop="164dp"
+            android:layout_marginRight="65dp"
+            android:layout_toRightOf="@+id/imageViewFatura"
+            android:fontFamily="@font/roboto_bold_"
+            android:text="Endereço"
+            android:maxLines="1"
+            android:lines="1"
+            android:ellipsize="marquee"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="187dp"
+            android:layout_marginEnd="67dp"
+            android:layout_marginRight="67dp"
+            android:fontFamily="sans-serif-light"
+            android:text="R$ 89,90"
+            android:textColor="#000000"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/textViewStatusPlano"
+            android:layout_width="319dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="33dp"
+            android:fontFamily="@font/roboto_bold_"
+            android:text="Habilitado"
+            android:textColor="@color/colorBotaoPagar2"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageViewFatura"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="131dp"
+            android:layout_marginRight="165dp"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/ic_plano_verde" />
+
+        <WebView
+            android:id="@+id/webViewPropagandaRoleta"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="false"
+            android:scaleType="centerCrop"
+            android:shadowColor="#111"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="5"
+            android:visibility="gone"
+            android:windowSoftInputMode="adjustResize" />
+
+        <TextView
+            android:id="@+id/textViewNomePlano"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="143dp"
+            android:layout_marginEnd="59dp"
+            android:layout_marginRight="59dp"
+            android:fontFamily="@font/roboto_bold_"
+            android:text="Banda Larga 50 Mb down 20 Mb up"
+            android:textColor="@color/colorIconeAzulNubank"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <!--     <TextView
+            android:id="@+id/textViewFaixaLateralDif"
+            android:layout_width="5dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="160dp"
+            android:background="@color/colorPrimaryLight"
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/textViewFaixaLateral"
+            android:layout_width="5dp"
+            android:layout_height="160dp"
+            android:background="@color/colorIconesMenu"
+            android:text=" " />
+-->
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,29 @@
+<!-- fragment_edit_name.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <WebView
+        android:id="@+id/webViewInternetBanking"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shadowColor="#111"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:focusable="true"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+        android:shadowRadius="5"/>
+
+<!--  GAMBIARRA DE HABILITAR O TECLADO  -->
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:visibility="invisible"/>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<!-- fragment_edit_name.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/linearCodBarras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="Aviso"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewMsgAntiVirus"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingBottom="5dp"
+            android:shadowColor="@color/colorLetraPreta"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:text=""
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textViewMsgAntiVirusBotaoNegar"
+                android:layout_width="115dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="Agora não"
+                android:textColor="?attr/colorAccent" />
+
+            <TextView
+                android:id="@+id/textViewMsgAntiVirusBotaoConfirmar"
+                android:layout_width="147dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|right"
+                android:text="Sim, quero ativar"
+                android:textColor="?attr/colorAccent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

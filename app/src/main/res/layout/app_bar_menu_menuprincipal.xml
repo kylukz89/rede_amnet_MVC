@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTransparente"
+    app:elevation="0dp"
+
+    tools:context=".View.View.MenuPrincipal">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTransparente"
+        android:theme="@style/AppTheme.AppBarOverlay"
+
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:elevation="0dp"
+
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:id="@+id/relativeIconeNotificacaoTopo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+
+                android:gravity="right|center_vertical"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_central_notificacoes_recheado"
+                    android:textColor="@color/colorPadraoCinzaPadrao" />
+
+                <ImageView
+                    android:id="@+id/imageViewIconeFlagTopo"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/border_image_notificacao"
+                    android:cropToPadding="true"
+                    android:padding="1dp"
+                    android:scaleType="centerCrop"
+                    android:textColor="@color/colorPadraoCinzaPadrao"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_menu_principal" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

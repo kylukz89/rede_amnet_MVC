@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".View.View.MenuMinhaConta"
+    tools:showIn="@layout/app_bar_menu_minhacontal">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextStatusCliente"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_status"
+                android:drawableTint="@color/colorIconesMenu"
+                android:hint="Status"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLetraPreta"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/editTextNomeCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/ic_conta_nome"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/colorIconesMenu"
+                android:hint="Nome"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLetraPreta"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editTextCPFCNPJCliente"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_cpf"
+                android:drawableTint="@color/colorIconesMenu"
+                android:hint="CPF/CNPJ"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLetraPreta"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editTextEnderecoCliente"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_endereco"
+                android:drawableTint="@color/colorIconesMenu"
+                android:hint="Endereço"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLetraPreta"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editTextBairroCliente"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_bairro"
+                android:drawableTint="@color/colorIconesMenu"
+                android:hint="Bairro"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLetraPreta"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editTextCEPCliente"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_cep"
+                android:drawableTint="@color/colorIconesMenu"
+                android:hint="CEP"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLetraPreta"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editTextCidadeCliente"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_cidade"
+                android:drawableTint="@color/colorIconesMenu"
+                android:hint="Cidade/UF"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLetraPreta"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/editTextFoneCliente01"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/ic_celular"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/colorIconesMenu"
+                android:hint="Contato 01"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLetraPreta"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editTextFoneCliente02"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/ic_celular"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/colorIconesMenu"
+                android:hint="Contato 02"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLetraPreta"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/editTextFoneCliente03"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/ic_celular"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/colorIconesMenu"
+                android:hint="Contato 03"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLetraPreta"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/editTextFoneCliente04"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/ic_celular"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/colorIconesMenu"
+                android:hint="Contato 04"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLetraPreta"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editTextEmailCliente"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_email"
+                android:drawableTint="@color/colorIconesMenu"
+                android:hint="E-mail"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLetraPreta"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+
+
+

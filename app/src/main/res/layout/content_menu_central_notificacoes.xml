@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:background="@color/colorPadraoCinzaPadrao"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".View.View.MenuCentralNotificacoes"
+    tools:showIn="@layout/app_bar_menu_central_notificacoes">
+
+
+
+    <TextView
+        android:id="@+id/textViewTituloExtratoConexao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeCamposFiltro"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="5dp"
+        android:paddingLeft="5dp"
+        android:paddingEnd="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:text="Central de Notificações"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        tools:ignore="NotSibling"
+        android:layout_gravity="center_horizontal" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewNotificacoes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewTituloExtratoConexao"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        tools:listitem="@layout/card_central_notificacoes"
+        android:divider="@null"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="false"
+        android:padding="5dp"
+        android:paddingLeft="5dp"
+        android:paddingEnd="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:scrollbarSize="5dp"
+        android:smoothScrollbar="false"
+        android:splitMotionEvents="true"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
+
+
+
+

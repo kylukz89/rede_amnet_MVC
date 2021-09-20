@@ -1,0 +1,156 @@
+<!-- fragment_edit_name.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearBotaoCredito"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_credit"
+            android:textColor="@color/colorPadraoCinzaPadrao"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/imageButtonPagarCredito"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="#00000000"
+            android:padding="20dp"
+            android:text="CRÉDITO"
+            android:textAlignment="center"
+            android:textColor="@color/colorCorBrancaDestaqueOpcao"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+     <LinearLayout
+        android:id="@+id/linearBotaoDebito"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_credit"
+            android:padding="5dp"
+            android:textColor="@color/colorPadraoCinzaPadrao"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/imageButtonPagarDebito"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="#00000000"
+            android:padding="20dp"
+            android:text="DÉBITO"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorCorBrancaDestaqueOpcao"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearBotaoBoleto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_boleto"
+            android:padding="5dp"
+            android:textColor="@color/colorPadraoCinzaPadrao"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/imageButtonPagar"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="#00000000"
+            android:padding="20dp"
+            android:text="BOLETO"
+            android:textAlignment="center"
+            android:textColor="@color/colorCorBrancaDestaqueOpcao"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearCodBarras"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_barras"
+            android:padding="5dp"
+            android:textColor="@color/colorPadraoCinzaPadrao"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/imageButtonCodBarras"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="#00000000"
+            android:padding="20dp"
+            android:text="CÓD. BARRAS"
+            android:textAlignment="center"
+            android:textColor="@color/colorCorBrancaDestaqueOpcao"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<!-- fragment_edit_name.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F6F6F6"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:text="Rede Telecom"
+        android:textAlignment="center"
+        android:textColor="@color/colorIconeAzulNubank"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:justificationMode="inter_word"
+        android:text="Informe o seu CPF/CNPJ para que enviemos a sua senha para o seu e-mail de cadastro."
+        android:textAlignment="center"
+        android:textColor="@color/colorIconesMenu"
+        android:textSize="16sp" />
+
+
+    <Switch
+        android:id="@+id/switchRedefinir"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="3.5dp"
+        android:layout_weight="0.06"
+        android:backgroundTint="#111"
+        android:drawableLeft="@drawable/ic_rg"
+        android:drawablePadding="5dp"
+        android:drawableTint="#333"
+        android:text=" Escolha CPF ou CNPJ"
+        android:textColor="#333"
+        android:textColorHint="#777"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/editTextCPFRedefinirSenha"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="#111"
+        android:drawablePadding="5dp"
+        android:drawableTint="#333"
+        android:hint="CPF"
+        android:inputType="numberDecimal"
+        android:textColor="#333"
+        android:textColorHint="#777"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/ic_conta_nome" />
+
+
+
+    <TextView
+        android:id="@+id/botaoNaoCadstrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="10dp"
+        android:paddingRight="10dp"
+        android:text="SIM, ENVIAR NO E-MAIL"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/botaoDesejoMeCadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="10dp"
+        android:paddingRight="10dp"
+        android:text="CANCELAR"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

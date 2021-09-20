@@ -1,0 +1,114 @@
+<!-- fragment_edit_name.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/linearConfirmeDados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="Confirme seus dados!"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/campoEnderecoConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Endereço"
+            android:textSize="14sp"></EditText>
+
+        <EditText
+            android:id="@+id/campoNumeroConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="nº"
+            android:textSize="14sp"></EditText>
+
+        <EditText
+            android:id="@+id/campoFoneConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="DDD + Fone"
+            android:inputType="phone"
+            android:textSize="14sp"></EditText>
+
+        <EditText
+            android:id="@+id/campoCelularConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="DDD + Celular"
+            android:inputType="phone"
+            android:textSize="14sp"></EditText>
+
+        <EditText
+            android:id="@+id/campoCelularFacil"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="DDD + Celular atual"
+            android:inputType="phone"
+            android:maxLength="15"
+            android:textSize="14sp"></EditText>
+
+        <EditText
+            android:id="@+id/campoEmailConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="E-mail"
+            android:textSize="14sp"></EditText>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textViewMsgAntiVirusBotaoNegar"
+                android:layout_width="115dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="Descartar"
+                android:textColor="?attr/colorAccent" />
+
+            <TextView
+                android:id="@+id/textViewMsgAntiVirusBotaoConfirmar"
+                android:layout_width="147dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|right"
+                android:text="Confirmar"
+                android:textColor="?attr/colorAccent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
