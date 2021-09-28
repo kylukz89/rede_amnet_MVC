@@ -95,7 +95,7 @@ public class ContratoRecorrenteAdapter extends RecyclerView.Adapter<ContratoReco
                 // Reproduz o efeito de vibrar o celular
                 ControladorInterface.setClickBotao(planoList.get(position).getCtx());
                 // Apenas para planos ativos
-                if (planoList.get(position).getStatusPlano().equals("Ativo")) {
+//                if (planoList.get(position).getStatusPlano().equals("Ativo")) {
                     // Carrega a tela com FK da categoria escolhida para filtrar as respostas por categoria
                     MenuRecorrenteCartao.COD_CODCLIE_CARTAO = planoList.get(position).getCodClieCartao() + "";
                     MenuRecorrenteCartao.COD_CONTRATO_ESCOLHIDO = planoList.get(position).getCodSercli() + "";
@@ -112,9 +112,9 @@ public class ContratoRecorrenteAdapter extends RecyclerView.Adapter<ContratoReco
                     MenuRecorrenteCartao.COD_CONTRATO_EMPRESA_NOME = planoList.get(position).getEmpresaNome();
                     // Seleciona o contrato escolhido
                     ((MenuRecorrenteContrato) planoList.get(0).getCtx()).startActivity(planoList.get(0).getIntent());
-                } else {
-                    ((MenuRecorrenteContrato) planoList.get(0).getCtx()).setDialogAlerta("Opção indisponível para um plano bloqueado, primeiro deve-se ativá-lo para depois prosseguir.");
-                }
+//                } else {
+//                    ((MenuRecorrenteContrato) planoList.get(0).getCtx()).setDialogAlerta("Opção indisponível para um plano bloqueado, primeiro deve-se ativá-lo para depois prosseguir.");
+//                }
             }
         });
 

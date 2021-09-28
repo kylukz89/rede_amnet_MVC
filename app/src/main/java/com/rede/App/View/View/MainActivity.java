@@ -82,9 +82,10 @@ public class MainActivity extends AppCompatActivity {
             }.getClass().getEnclosingMethod().getName() + " ERRO MSG: " + e.getMessage() + " STACKTRACE: " + e.getStackTrace().toString(), usuario.getCodigo(), Ferramentas.getMarcaModeloDispositivo(Splash.ctx));
         }
 
-        textVersao.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+
+//        textVersao.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
 //                Object retorno = new ExecutadorMetodoAssincrono(MainActivity.this).setExecutarMetodo(
 //                        new Avisos(),
 //                        "getAlertaMassivoTeste",
@@ -92,8 +93,9 @@ public class MainActivity extends AppCompatActivity {
 //                        new Class[] {String.class, int.class, boolean.class},
 //                        MainActivity.this
 //                );
-            }
-        });
+//            }
+//        });
+
 
 
         final EditText editTextcampoSenha = (EditText) findViewById(R.id.editTextcampoSenha);
