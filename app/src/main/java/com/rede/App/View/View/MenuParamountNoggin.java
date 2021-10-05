@@ -38,8 +38,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Exibe as faturas de um plano escolhido por ordem de pendência,
- * parar ser exibida a 2ª via; integração com CIELO.
+ * Exibe os usuários do IPTV
  *
  * @author Igor Maximo
  * @date 19/02/2019

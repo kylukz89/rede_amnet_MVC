@@ -8,7 +8,12 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-
+/**
+ * Para funcionamento do módulo de speed test
+ *
+ * @author  Igor Maximo
+ * @date    05/10/2021
+ */
 public class GetSpeedTestHostsHandler extends Thread {
 
     HashMap<Integer, String> mapKey = new HashMap<>();

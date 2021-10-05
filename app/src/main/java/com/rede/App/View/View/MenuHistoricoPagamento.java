@@ -166,58 +166,6 @@ public class MenuHistoricoPagamento extends AppCompatActivity implements Navigat
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-/*
-
-        try {
-            ReviewManager manager = ReviewManagerFactory.create(this);
-            Task<ReviewInfo> request = manager.requestReviewFlow();
-            request.addOnCompleteListener(task -> {
-                if (task.isSuccessful()) {
-                    // We can get the ReviewInfo object
-                    ReviewInfo reviewInfo = task.getResult();
-                } else {
-                    // There was some problem, log or handle the error code.
-//                    @ReviewErrorCode int reviewErrorCode = ((TaskException) task.getException()).getErrorCode();
-                }
-            });
-            Task<Void> flow = manager.launchReviewFlow(MenuHistoricoPagamento.this, request);
-            flow.addOnCompleteListener(task -> {
-                // The flow has finished. The API does not indicate whether the user
-                // reviewed or not, or even whether the review dialog was shown. Thus, no
-                // matter the result, we continue our app flow.
-            });
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-*/
-
-
-/*
-        try {
-            ReviewManager manager = ReviewManagerFactory.create(this);
-            com.google.android.play.core.tasks.Task<ReviewInfo> request = manager.requestReviewFlow();
-            request.addOnCompleteListener(task -> {
-                if (task.isSuccessful()) {
-                    // We can get the ReviewInfo object
-                    ReviewInfo reviewInfo = task.getResult();
-                    Log.i("rate", "SUCCESS FLOW");
-                    com.google.android.play.core.tasks.Task<Void> flow = manager.launchReviewFlow(this, reviewInfo);
-                    flow.addOnCompleteListener(task2 -> {
-                        // The flow has finished. The API does not indicate whether the user
-                        // reviewed or not, or even whether the review dialog was shown. Thus, no
-                        // matter the result, we continue our app flow.
-                    });
-                } else {
-                    Log.i("rate", "NOT A SUCCESS FLOW");
-                }
-            });
-        } catch (Exception e) {
-
-        }
-*/
-
-
         // Botão voltar
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -322,7 +270,7 @@ public class MenuHistoricoPagamento extends AppCompatActivity implements Navigat
 
 
     /**
-     * Realiza download da fatura em PDF do servidor
+     * Realiza download da comprovantes em PDF do servidor
      *
      * @author Igor Maximo
      * @date 18/04/2019
@@ -430,30 +378,6 @@ public class MenuHistoricoPagamento extends AppCompatActivity implements Navigat
             }.getClass().getEnclosingMethod().getName() + " ERRO MSG: " + e.getMessage() + " STACKTRACE: " + e.getStackTrace().toString(), usuario.getCodigo(), Ferramentas.getMarcaModeloDispositivo(Splash.ctx));
         }
     }
-//
-//    /**
-//     * Exibe o "modal" para mostrar uma mensagem de aviso qualquer
-//     *
-//     * @author Igor Maximo
-//     * @data 18/04/2019
-//     */
-//    public void geraPopUpAlertaMsg(String msg) {
-//        LayoutInflater inflater = getLayoutInflater();
-//        View layout;
-//
-//        layout = inflater.inflate(R.layout.toast_msg_alerta, (ViewGroup) findViewById(R.id.toast_layout_root_autorizada));
-//        TextView text = (TextView) layout.findViewById(R.id.text);
-//        text.setText(msg);
-//
-//        Toast toast = new Toast(getApplicationContext());
-//        toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
-//        toast.setDuration(Toast.LENGTH_LONG);
-//        toast.setView(layout);
-//        toast.show();
-//        // Recria a tela
-//        recreate();
-//    }
-
 
     /**
      * Exibe o "modal" do crud de dados do cartão de crédito
@@ -483,8 +407,8 @@ public class MenuHistoricoPagamento extends AppCompatActivity implements Navigat
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////
-//                            ASYNCTASK PARA CARREGAMENTO DOS TÍTULOS                             //
-////////////////////////////////////////////////////////////////////////////////////////////////////
+    //                            ASYNCTASK PARA CARREGAMENTO DOS TÍTULOS                             //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
     @SuppressLint("StaticFieldLeak")
     private class AsyncTaskCarregaTitulosPagos extends AsyncTask<Void, Integer, Boolean> {
         private ProgressDialog mProgress = null;

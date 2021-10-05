@@ -6,9 +6,9 @@ import android.net.NetworkInfo;
 import android.telephony.TelephonyManager;
 
 /**
- * Check device's network connectivity and speed
+ * Verifica conectividade/internet
  *
- * @author emil http://stackoverflow.com/users/220710/emil
+ * @author Igor Maximo
  */
 public class Connectivity {
 

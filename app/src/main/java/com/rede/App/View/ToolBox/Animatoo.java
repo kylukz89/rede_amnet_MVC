@@ -5,6 +5,11 @@ import android.content.Context;
 
 import com.rede.ncarede.R;
 
+/**
+ * Classe para realizar animações em componentes
+ *
+ * @author Igor Maximo
+ */
 public class Animatoo {
 
     public static void animateZoom(Context context) {

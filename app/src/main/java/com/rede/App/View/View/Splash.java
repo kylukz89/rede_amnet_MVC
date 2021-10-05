@@ -51,7 +51,6 @@ public class Splash extends AppCompatActivity implements LifecycleObserver {
         getWindow().getDecorView();
         setContentView(R.layout.activity_splash);
 
-
         try {
             Animatoo.animateZoom(this);
         } catch (Exception e) {
@@ -84,7 +83,6 @@ public class Splash extends AppCompatActivity implements LifecycleObserver {
                         e.printStackTrace();
                     } finally {
                         Intent intent = new Intent(Splash.this, MainActivity.class);
-//                    intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                         startActivity(intent);
                         finish();
                         Animatoo.animateZoom(Splash.this);  //fire the zoom animation

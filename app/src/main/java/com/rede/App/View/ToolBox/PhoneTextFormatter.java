@@ -8,9 +8,7 @@ import android.widget.EditText;
 public class PhoneTextFormatter implements TextWatcher {
 
     private final String TAG = this.getClass().getSimpleName();
-
     private EditText mEditText;
-
     private String mPattern;
 
     public PhoneTextFormatter(EditText editText, String pattern) {
@@ -29,8 +27,6 @@ public class PhoneTextFormatter implements TextWatcher {
     @Override
     public void onTextChanged(CharSequence s, int start, int before, int count) {
         StringBuilder phone = new StringBuilder(s);
-
-
         if (count > 0 && !isValid(phone.toString())) {
             for (int i = 0; i < phone.length(); i++) {
                 char c = mPattern.charAt(i);

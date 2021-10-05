@@ -169,22 +169,7 @@ public class AtendimentoOnlineWebViewActivity extends AppCompatActivity {
             webSettings.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
         }
 
-        // Para limpar cache após app ser fechado
-//        CookieManager cookieManager = CookieManager.getInstance();
-//        cookieManager.setCookie("_ga=GA1.1.1959515046.1594118705; PHPSESSID=74sisrede7278390; _ga_9TDTYFXYQ1=GS1.1.1610630479.483.1.1610631711.0", "");
 
-//        cookieManager.setCookie("15661", "");
-
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-//            cookieManager.removeAllCookies(new ValueCallback<Boolean>() {
-//                @Override
-//                public void onReceiveValue(Boolean aBoolean) {
-//                    Log.d(TAG, "Cookie removed: " + aBoolean);
-//                }
-//            });
-//        } else {
-//            cookieManager.removeAllCookie();
-//        }
         CookieSyncManager.getInstance().sync();
 
         webView.setWebChromeClient(new ChromeClient());

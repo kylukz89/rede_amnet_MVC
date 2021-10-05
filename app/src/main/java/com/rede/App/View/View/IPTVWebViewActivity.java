@@ -298,18 +298,6 @@ public class IPTVWebViewActivity extends AppCompatActivity implements LocationLi
 ////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
-/*
-        webView.addJavascriptInterface(this, "androidWebViewClient");
-        String html = "<!DOCTYPE html>" +
-                "<html>" +
-                "<body onload='document.frm1.submit()'>" +
-                "<form action='http://187.95.0.9/sisredeTeste/' method='post' name='frm1'>" +
-                "<input type='hidden' name='token' value='null'><br>" +
-                "</form>" +
-                "</body>" +
-                "</html>";
-        webView.loadData(html, "text/html", "UTF-8");
-*/
         webView.addJavascriptInterface(this, "androidWebViewClient");
         String html = "<!DOCTYPE html>" +
                 "<html>" +

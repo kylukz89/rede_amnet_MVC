@@ -35,7 +35,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
- * Exibe todos os alertas pertinentes ao usuário
+ * Exibe todos as notificações pertinentes ao usuário
  *
  * @author Igor Maximo
  * @criado 04/06/2019

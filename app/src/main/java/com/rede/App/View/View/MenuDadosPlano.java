@@ -89,15 +89,11 @@ public class MenuDadosPlano extends AppCompatActivity implements NavigationView.
                 }
             }
         });
-
         // Animação de transição
         overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
-
         // Para controlde de tempo da sessão
         LifeCycleObserver.context = this;
-
         new AsyncTaskCarregaDadosContrato(MenuDadosPlano.this).execute();
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         /*ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);

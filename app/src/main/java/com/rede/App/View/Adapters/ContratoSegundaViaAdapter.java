@@ -59,7 +59,6 @@ public class ContratoSegundaViaAdapter extends RecyclerView.Adapter<ContratoSegu
     public void onBindViewHolder(PlanoViewHolder holder, final int position) {
 
         holder.setIsRecyclable(false);
-
         holder.imageViewFatura.setImageResource(Ferramentas.getIconeRoletaContratoPorStatus(planoList.get(position).getStatusPlano()));
         holder.textViewStatusPlano.setText(Html.fromHtml("<span><b>" + planoList.get(position).getStatusPlano() + "</b></span>"));
 
@@ -95,18 +94,14 @@ public class ContratoSegundaViaAdapter extends RecyclerView.Adapter<ContratoSegu
             public void onClick(View v) {
                 // Reproduz o efeito de vibrar o celular
                 ControladorInterface.setClickBotao(planoList.get(position).getCtx());
-                // Apenas para planos não cancelados
-                if (!planoList.get(position).getStatusPlano().equals("Cancelado")) {
-                    // Carrega a tela com FK da categoria escolhida para filtrar as respostas por categoria
-                    MenuSegundaVia.COD_CONTRATO_ITEM_ESCOLHIDO = planoList.get(position).getCodSercli() + "";
-                    // Dados da empresa fornecedora
-                    MenuRecorrenteCartao.COD_CONTRATO_EMPRESA_CNPJ = planoList.get(position).getEmpresaCNPJ();
-                    MenuRecorrenteCartao.COD_CONTRATO_EMPRESA_NOME = planoList.get(position).getEmpresaNome();
-                    // Seleciona o contrato escolhido
-                    ((MenuSegundaViaContrato) planoList.get(0).getCtx()).startActivity(planoList.get(0).getIntent());
-                } else {
-                    ((MenuSegundaViaContrato) planoList.get(0).getCtx()).setDialogAlerta("Opção indisponível para um plano cancelado!");
-                }
+                // Carrega a tela com FK da categoria escolhida para filtrar as respostas por categoria
+                MenuSegundaVia.COD_CONTRATO_ITEM_ESCOLHIDO = planoList.get(position).getCodSercli() + "";
+                // Dados da empresa fornecedora
+                MenuRecorrenteCartao.COD_CONTRATO_EMPRESA_CNPJ = planoList.get(position).getEmpresaCNPJ();
+                MenuRecorrenteCartao.COD_CONTRATO_EMPRESA_NOME = planoList.get(position).getEmpresaNome();
+                // Seleciona o contrato escolhido
+                ((MenuSegundaViaContrato) planoList.get(0).getCtx()).startActivity(planoList.get(0).getIntent());
+
             }
         });
 

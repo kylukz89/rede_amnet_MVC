@@ -43,7 +43,6 @@ public class MenuHabProv extends AppCompatActivity implements NavigationView.OnN
 
     final Usuario usuario = new Usuario();
     private final HabProvisoriaDAO habprov = new HabProvisoriaDAO();
-    //FragmentRoletaPlanos fragmentRoletaPlanos = new FragmentRoletaPlanos();
     private HabProvisoria hprov;
     WebView mWebView;
 
@@ -184,9 +183,7 @@ public class MenuHabProv extends AppCompatActivity implements NavigationView.OnN
 
         @Override
         protected void onPostExecute(Boolean result) {
-
             final Spinner spinnerComboPlanos = (Spinner) findViewById(R.id.spinnerComboPlanosSuspensos);
-
             // Combo carregado com nome dos planos suspensos por débito
             try {
                 if ((hprov.getPlanosSuspensosPorDebitoCodSerCli().size() != 0)) {
@@ -197,10 +194,7 @@ public class MenuHabProv extends AppCompatActivity implements NavigationView.OnN
             } catch (Exception e) {
                 e.printStackTrace();
             }
-
             mProgress.dismiss();
-            //geraPopUpTransacao(autorizada, msgTransacao); // cor do popup transação
-            // Toast.makeText(MenuHabProv.this, "Plano habilitado por 3 dias! ", Toast.LENGTH_SHORT).show();
         }
 
         private void ThreadRunningOperation() {

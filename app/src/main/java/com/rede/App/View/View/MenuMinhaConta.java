@@ -53,13 +53,10 @@ public class MenuMinhaConta extends AppCompatActivity implements NavigationView.
         setContentView(R.layout.activity_menu_minhaconta);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         // Para controlde de tempo da sessão
         LifeCycleObserver.context = this;
-
         // Animação de entrada
         Animatoo.animateSwipeLeft(this);
-
         // Botão voltar
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -116,16 +113,7 @@ public class MenuMinhaConta extends AppCompatActivity implements NavigationView.
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-//        if (id == R.id.action_sair) {
-//            MenusAbaLateralEsquerda.botao3Pontinhos(this);
-//        }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -216,9 +204,6 @@ public class MenuMinhaConta extends AppCompatActivity implements NavigationView.
             final EditText editTextEmailCliente = (EditText) findViewById(R.id.editTextEmailCliente);
 
             try {
-//                usuDao.getCarregaDadosUsuario();
-//            new AsyncTaskDadosUsuario(MenuMinhaConta.this).execute();
-
                 if (usuario.getStatus().equals("ATIVO")) {
                     editTextStatusCliente.setText(usuario.getStatus().toUpperCase());
                     editTextStatusCliente.setTextColor(Color.GREEN);

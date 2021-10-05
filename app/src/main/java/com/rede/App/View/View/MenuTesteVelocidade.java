@@ -54,7 +54,7 @@ import java.util.List;
 
 
 /**
- * Tela principal do APP com todas as funcionalidades
+ * Tela do speed test
  *
  * @author Igor Maximo
  * @criado 19/02/2019

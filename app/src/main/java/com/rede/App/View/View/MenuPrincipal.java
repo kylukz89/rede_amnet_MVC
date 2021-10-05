@@ -128,8 +128,6 @@ public class MenuPrincipal extends AppCompatActivity implements NavigationView.O
         // Atribui valor padrão para as variáveis de contexto
         MenuPrincipal.CTX = MenuPrincipal.this;
         MenuPrincipal.CTX_ACTIVITY = (Activity) MenuPrincipal.this;
-
-
         try {
             // Verifica o ciclo de vida do App
             new LifeCycleObserver().onCreate();
@@ -148,7 +146,6 @@ public class MenuPrincipal extends AppCompatActivity implements NavigationView.O
             public void onClick(View v) {
                 // Reproduz o efeito de vibrar o celular
                 ControladorInterface.setClickBotao(getApplicationContext());
-
                 setAbrirCentralNotificacoes(view);
             }
         });
@@ -201,25 +198,6 @@ public class MenuPrincipal extends AppCompatActivity implements NavigationView.O
                         }, 0);
                     }
                 });
-            /*
-            int screenSize = getResources().getConfiguration().screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK;
-            switch(screenSize) {
-                case Configuration.SCREENLAYOUT_SIZE_XLARGE:
-                    Toast.makeText(this, "Extra Large Screen", Toast.LENGTH_LONG).show();
-                    break;
-                case Configuration.SCREENLAYOUT_SIZE_LARGE:
-                    Toast.makeText(this, "Large Screen", Toast.LENGTH_LONG).show();
-                    break;
-                case Configuration.SCREENLAYOUT_SIZE_NORMAL:
-                    Toast.makeText(this, "Normal Screen " + screenSize, Toast.LENGTH_LONG).show();
-                    break;
-                case Configuration.SCREENLAYOUT_SIZE_SMALL:
-                    Toast.makeText(this, "Small Screen", Toast.LENGTH_LONG).show();
-                    break;
-                default:
-                    Toast.makeText(this, "Screen size is not xlarge, large, normal or small", Toast.LENGTH_LONG).show();
-            }
-            */
                 //////////////////////////////////////////////////////////////////////////////
             } catch (Exception e) {
                 AppLogErroDAO.gravaErroLOGServidor(usuario.getTipoCliente(), new Object() {
@@ -314,14 +292,6 @@ public class MenuPrincipal extends AppCompatActivity implements NavigationView.O
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-    /*    ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-*/
         // disabilita aba lateral esquerda
         drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
     }
@@ -396,10 +366,6 @@ public class MenuPrincipal extends AppCompatActivity implements NavigationView.O
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-//        int id = item.getItemId();
-//        if (id == R.id.action_sair) {
-//            MenusAbaLateralEsquerda.botao3Pontinhos(this);
-//        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -677,17 +643,9 @@ public class MenuPrincipal extends AppCompatActivity implements NavigationView.O
 
     }
 
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////// ASYNCTASK PARA PROCESSAMENTO DE PAGAMENTOS /////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
     ////////////////////////////////////////////////////////////////////////////////////////////////////
-//                            ASYNCTASK PARA CARREGAMENTO DOS TÍTULOS                             //
-////////////////////////////////////////////////////////////////////////////////////////////////////
+    //                            ASYNCTASK PARA CARREGAMENTO DOS TÍTULOS                             //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
     @SuppressLint("StaticFieldLeak")
     private class AsyncTaskCarregaContratos extends AsyncTask<Object[], Integer, Boolean> {
         private ProgressDialog mProgress = null;

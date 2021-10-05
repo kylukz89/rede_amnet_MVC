@@ -38,7 +38,6 @@ public class ManipulaData {
         }
         // SAÍDA --> 10/09/1989
 
-//        System.out.println(vetor[0]+"/"+vetor[1]+"/"+vetor[2]);
         return String.valueOf(vetor[0] + "/" + vetor[1] + "/" + vetor[2]);
     }
 
@@ -49,12 +48,6 @@ public class ManipulaData {
         d1 = (x.substring(0, 2));
         d2 = (x.substring(3, 5));
         d3 = (x.substring(6, 10));
-
-//        System.out.println("d1============> " + d1);
-//        System.out.println("d2============> " + d2);
-//        System.out.println("d3============> " + d3);
-//        System.out.println("Data ============> " + d3 + "-" + d2 + "-" + d1);
-
         // SAÍDA --> 1989-09-10
         return d3 + "-" + d2 + "-" + d1;
     }

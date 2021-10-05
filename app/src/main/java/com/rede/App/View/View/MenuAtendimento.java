@@ -42,7 +42,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Exibe as todas as faturas pagas
+ * Exibe opções de atendimento
  *
  * @author Igor Maximo
  * @criado 19/02/2019

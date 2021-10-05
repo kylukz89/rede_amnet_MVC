@@ -56,8 +56,6 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonBotaoAcessar;
     private TextView text;
     private TextView textVersao;
-    //    PotencialCliente potencialCliente = new PotencialCliente();
-//    PotencialClienteDAO potencialClienteDAO = new PotencialClienteDAO();
     public static Context ctx;
 
     @SuppressLint({"ResourceAsColor", "SetTextI18n"})
@@ -81,22 +79,6 @@ public class MainActivity extends AppCompatActivity {
             AppLogErroDAO.gravaErroLOGServidor(usuario.getTipoCliente(), new Object() {
             }.getClass().getEnclosingMethod().getName() + " ERRO MSG: " + e.getMessage() + " STACKTRACE: " + e.getStackTrace().toString(), usuario.getCodigo(), Ferramentas.getMarcaModeloDispositivo(Splash.ctx));
         }
-
-
-//        textVersao.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Object retorno = new ExecutadorMetodoAssincrono(MainActivity.this).setExecutarMetodo(
-//                        new Avisos(),
-//                        "getAlertaMassivoTeste",
-//                        new Object[] {"123", 555, true},
-//                        new Class[] {String.class, int.class, boolean.class},
-//                        MainActivity.this
-//                );
-//            }
-//        });
-
-
 
         final EditText editTextcampoSenha = (EditText) findViewById(R.id.editTextcampoSenha);
         editTextcampoSenha.addTextChangedListener(new TextWatcher() {
@@ -136,36 +118,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
-
-
-//        Thread thread = new Thread() {
-//            @Override
-//            public void run() {
-//                while (true) {
-//                    try {
-//                        if (tst != null) {
-//                            runOnUiThread(new Runnable() {
-//                                @Override
-//                                public void run() {
-//                                    try {
-//                                        editTextCampoCPFCNPJ.setText(tst);
-//                                    } catch (Exception e) {
-//                                        e.printStackTrace();
-//                                    }
-//                                }
-//                            });
-//                        }
-//                        sleep(1000);
-//                    } catch (Exception e) {
-//                        e.printStackTrace();
-//                    }
-//                }
-//            }
-//        };
-//        thread.start();
-
-
 
         editTextCampoCPFCNPJ.setOnKeyListener(new View.OnKeyListener() {
             @Override
@@ -235,7 +187,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void setButtonAcessarClick() {
         //////////////////////////// CONSULTA VERSIOANEMNTO ////////////////////////////
-//                if (new ConsultaVersionamento().retornaMenorVersaoAceitavel()) {
         final EditText editTextCampoCPFCNPJ = (EditText) findViewById(R.id.editTextcampoLogin);
         final EditText editTextSenha = (EditText) findViewById(R.id.editTextcampoSenha);
         usuario.setCpfCnpj(editTextCampoCPFCNPJ.getText().toString());
@@ -296,27 +247,7 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(), "Senha incorreta! ", Toast.LENGTH_SHORT).show();
                         }
                     } catch (Exception e) {
-                   /*     if (e.toString().matches("java.net.ConnectException")) {
-                            Toast.makeText(MainActivity.this, "Problemas de conexão!.", Toast.LENGTH_SHORT).show();
-                        }
-                        if (e.toString().contains("No route to host")) {
-                            Toast.makeText(MainActivity.this, "Problemas de conexão!.", Toast.LENGTH_SHORT).show();
-                        }
-                        if (e.toString().contains("End of input at character 0 of")) {
-                            Toast.makeText(MainActivity.this, "O app está em manutenção e deve retornar em algumas horas!\nPara maiores informações entre em contato com a nossa central de relacionamentos.", Toast.LENGTH_SHORT).show();
-                        }
-                        if (e.toString().contains("No value for CNPJ_CPF_CLIE")) {
-                            Toast.makeText(MainActivity.this, "Cadastro inexistente!", Toast.LENGTH_SHORT).show();
-//                            potencialCliente.setCampoCPFCNPJ(editTextCampoCPFCNPJ.getText().toString());
-//                            if (potencialClienteDAO.retornaSeCPFExisteClientePotencial(potencialCliente)) { // Pesquisa banco de dados do servidor
-//                                MenuPrincipal.CLIENTE_POTENCIAL = true;
-//                                MenuPrincipal.CPFCNPJ_CLIENTE_POTENCIAL = editTextCampoCPFCNPJ.getText().toString();
-//                                startActivity(i);
-//                            } else {
-//                                // Redireciona para a tela de cadastro gratuito
-//                                geraDialogDesejoMeCadastrarGratuitamente(editTextCampoCPFCNPJ.getText().toString());
-//                            }
-                        }*/
+                        // ...
                     }
                 }
             } else {
@@ -325,8 +256,6 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "CNPJ inválido!", Toast.LENGTH_SHORT).show();
                 } else {
                     try {
-                        // 220 836 148 28
-//                            autdao.carregaDadosAutenticacaoUsuario(); // Autentica
                         if (usuario.getCpfCnpj().replace(".", "").replace("-", "").replace("/", "").equals(usuario.getCpfCnpjAutenticacao().replace(".", "").replace("-", "").replace("/", ""))
                                 && usuario.getSenha().equals(usuario.getSenhaAutenticacao())) {
                             Toast.makeText(getApplicationContext(), "Autenticado com sucesso! ", Toast.LENGTH_SHORT).show();
@@ -346,47 +275,12 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(), "Senha incorreta! ", Toast.LENGTH_SHORT).show();
                         }
                     } catch (Exception e) {
-//                        Toast.makeText(getApplicationContext(), "Erro interno!", Toast.LENGTH_SHORT).show();
-                    /*    if (e.toString().matches("No route to host")) {
-                            Toast.makeText(MainActivity.this, "Problemas de conexão!.", Toast.LENGTH_SHORT).show();
-                        }
-                        if (e.toString().contains("End of input at character 0 of")) {
-                            Toast.makeText(MainActivity.this, "O app está em manutenção e deve retornar em algumas horas!\nPara maiores informações entre em contato com a nossa central de relacionamentos.", Toast.LENGTH_SHORT).show();
-                        }
-                        if (e.toString().matches("java.net.NoRouteToHostException: No route to host")) {
-                            Toast.makeText(MainActivity.ctx, "Problemas de conexão!", Toast.LENGTH_SHORT).show();
-                        }
-                        if (e.toString().contains("No value for CNPJ_CPF_CLIE")) {
-                            Toast.makeText(MainActivity.this, "Cadastro inexistente!", Toast.LENGTH_SHORT).show();
-//                            potencialCliente.setCampoCPFCNPJ(editTextCampoCPFCNPJ.getText().toString());
-//                            if (potencialClienteDAO.retornaSeCPFExisteClientePotencial(potencialCliente)) { // Pesquisa banco de dados do servidor
-//                                MenuPrincipal.CLIENTE_POTENCIAL = true;
-//                                MenuPrincipal.CPFCNPJ_CLIENTE_POTENCIAL = editTextCampoCPFCNPJ.getText().toString();
-//                                startActivity(i);
-//                            } else {
-//                                // Redireciona para a tela de cadastro gratuito
-//                                geraDialogDesejoMeCadastrarGratuitamente(editTextCampoCPFCNPJ.getText().toString());
-//                            }
-                        }*/
+                        // ...
                     }
                 }
             }
         } catch (Exception e) {
-//                if (e.toString().matches("java.net.ConnectException")) {
-//                    Toast.makeText(MainActivity.ctx, "Problemas de conexão!.", Toast.LENGTH_SHORT).show();
-//                }
-//                if (e.toString().matches("End of input at character 0 of")) {
-//                    Toast.makeText(MainActivity.ctx, "Falha na solicitação, tente novamente!", Toast.LENGTH_SHORT).show();
-//                }
-//                if (e.toString().matches("java.net.NoRouteToHostException: No route to host") || e.toString().matches("java.net.SocketException: Network is unreachable")) {
-//                    Toast.makeText(MainActivity.ctx, "Problemas de conexão!", Toast.LENGTH_SHORT).show();
-//                }
-//                if (e.toString().matches("java.net.SocketTimeoutException: connect timed out")) {
-//                    Toast.makeText(MainActivity.ctx, "Tempo conexão excedido!", Toast.LENGTH_SHORT).show();
-//                }
-//                if (e.toString().contains("No value for CNPJ_CPF_CLIE")) {
-//                    Toast.makeText(MainActivity.ctx, "Cadastro inexistente!", Toast.LENGTH_SHORT).show();
-//                }
+            // ...
         }
 
     }
@@ -404,26 +298,6 @@ public class MainActivity extends AppCompatActivity {
         builder.setView(view);
         final AlertDialog show = builder.show();
 
-//        TextView linearBotaoDesejoCadastrar = (TextView) view.findViewById(R.id.botaoDesejoMeCadastrar);
-//        linearBotaoDesejoCadastrar.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                show.dismiss();
-//                try {
-//                    @SuppressLint("UseSwitchCompatOrMaterialCode") Switch switchTipoDocumentoCpfCnpj = (Switch) findViewById(R.id.switch1);
-//                    if (switchTipoDocumentoCpfCnpj.isChecked()) {
-//                        CadastraPotencialCliente.tipoClienteMainAct = "J";
-//                    } else {
-//                        CadastraPotencialCliente.tipoClienteMainAct = "F";
-//                    }
-//                    CadastraPotencialCliente.cpfCnpjMainAct = cpfCnpj;
-//                    Intent cadastraPotencialCliente = new Intent(MainActivity.this, CadastraPotencialCliente.class);
-//                    startActivity(cadastraPotencialCliente);
-//                } catch (Exception e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        });
 
         view.findViewById(R.id.botaoNaoCadstrar).setOnClickListener(new View.OnClickListener() {
             @Override

@@ -50,8 +50,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Exibe as faturas de um plano escolhido por ordem de pendência,
- * parar ser exibida a 2ª via; integração com CIELO.
+ * Exibe os planos para escolha de antivrius
  *
  * @author      Igor Maximo
  * @date        19/02/2019
@@ -366,10 +365,8 @@ public class MenuAntivirus extends AppCompatActivity implements NavigationView.O
                                 .setCancelable(false)
                                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int idD) {
-//                                        if (Boolean.parseBoolean(String.valueOf(retorno[0]))) {
                                             // Redireciona para a activty principal
                                             startActivity(new Intent(MenuAntivirus.this, MenuPrincipal.class));
-//                                        }
                                         show.dismiss();
                                     }
                                 });

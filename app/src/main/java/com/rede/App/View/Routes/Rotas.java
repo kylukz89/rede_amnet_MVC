@@ -5,6 +5,8 @@ import com.rede.App.View.ToolBox.VariaveisGlobais;
 /**
  * Todos arquivos PHP do servidor
  *
+ * OBS: Endpoints de APIs
+ *
  * @author Igor Maximo
  * @date 19/02/2019
  */

@@ -104,15 +104,6 @@ public class MenuRecorrenteContrato extends AppCompatActivity implements Navigat
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        /*
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-        */
         // disabilita aba lateral esquerda
         drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
     }
@@ -160,12 +151,9 @@ public class MenuRecorrenteContrato extends AppCompatActivity implements Navigat
         final TextView textViewMsgAntiVirus = (TextView) view.findViewById(R.id.textViewMsgAntiVirus);
         textViewMsgAntiVirus.setText(Html.fromHtml("<span style='color: #555555; text-shadow: 5px 5px #333333;'>" +
                 "<label style='color: #000000; text-shadow: 5px 5px #000000;'><b>" + msg + "</b></label></span>"));
-
         view.findViewById(R.id.textViewMsgAntiVirusBotaoNegar).setVisibility(View.GONE);
         final TextView textViewMsgAntiVirusBotaoOK = (TextView) view.findViewById(R.id.textViewMsgAntiVirusBotaoConfirmar);
-
         textViewMsgAntiVirusBotaoOK.setText("Ok, pagarei para ativar!");
-
         // Botão confirmar
         textViewMsgAntiVirusBotaoOK.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -294,9 +282,7 @@ public class MenuRecorrenteContrato extends AppCompatActivity implements Navigat
                                 String.valueOf(contrato.getDadosSenhaApp().get(i))
                         );
                         // Apenas planos que estão enquadrados na regra de solicitação de antivírus
-//                        if (contrato.getDadosSeRegraAntivirus().get(i)) {
-                            planosLista.add(plano);
-//                        }
+                        planosLista.add(plano);
                     }
                 } else {
                     // Exibe msg caso não existe planos disponíveis/suportados

@@ -1,13 +1,16 @@
 package com.rede.App.View.ToolBox;
 
+import android.view.View;
+
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.LinearSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
-import android.view.View;
 
-/*
-    Classe para deslizar 1 por 1 index recyclerview
-*/
+/**
+ * Classe para deslizar 1 por 1 index recyclerview
+ *
+ * @author Igor Maximo
+ */
 public class SnapHelperOneByOne extends LinearSnapHelper {
 
     @Override

@@ -51,10 +51,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Exibe as todas as faturas pagas
+ * Exibe opções de resposta para um novo atendimento
  *
  * @author Igor Maximo
- * @criado 19/02/2019
+ * @criado 19/02/2021
  */
 public class MenuAtendimentoResposta extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -186,13 +186,7 @@ public class MenuAtendimentoResposta extends AppCompatActivity implements Naviga
         recyclerView.setNestedScrollingEnabled(false);
         ViewCompat.setNestedScrollingEnabled(recyclerView, false);
         recyclerView.setNestedScrollingEnabled(false);
-//        recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(EmpresaActivity.this, recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
-//             @Override
-//                public void onLongItemClick(View view, int position) {
-//
-//                }
-//           })
-//        );
+
         final RecyclerView recyclerViewAddOnPreDrawListener = recyclerView;
         recyclerViewAddOnPreDrawListener.getViewTreeObserver().addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
             @Override
@@ -300,15 +294,6 @@ public class MenuAtendimentoResposta extends AppCompatActivity implements Naviga
                     // Abre novo atendimento
                     setDialogConfirmarDados(fkCategoria, fkCategoriaResposta, codContrato, codContratoItem, respostaLivre, seRespostaLivre, tipoDeAtendimento);
 
-//                    new AsyncTaskSetAbrirNovoAtendimento().execute(new Object[] {
-//                            usuario.getCpfCnpj(),
-//                            codContrato,
-//                            codContratoItem,
-//                            fkCategoria,
-//                            fkCategoriaResposta,
-//                            respostaLivre,
-//                            tipoDeAtendimento
-//                    });
                     show.dismiss();
                 } else {
                     // Menor que 10

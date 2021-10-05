@@ -255,7 +255,6 @@ public class MenuParamountNogginContrato extends AppCompatActivity implements Na
                                 String.valueOf(contrato.getDadosUsuarioApp().get(i)),
                                 String.valueOf(contrato.getDadosSenhaApp().get(i))
                         );
-                        System.out.println("==============> " + contrato.getDadosStatusPlano().get(i).equals("Ativo"));
                         // Apenas planos que estão enquadrados na regra de solicitação de antivírus
                         if (contrato.getDadosStatusPlano().get(i).equals("Ativo")) {
                             planosLista.add(plano);

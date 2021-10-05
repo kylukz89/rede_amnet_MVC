@@ -8,6 +8,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.LinearSmoothScroller;
 import androidx.recyclerview.widget.RecyclerView;
 
+/**
+ * Para deslize suave de recyclerview
+ *
+ * @author Igor Maximo
+ * @date  05/10/2021
+ */
 public class CustomLinearLayoutManager extends LinearLayoutManager {
     public CustomLinearLayoutManager(Context context) {
         super(context);

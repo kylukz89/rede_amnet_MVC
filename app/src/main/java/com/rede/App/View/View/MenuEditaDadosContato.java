@@ -188,43 +188,6 @@ public class MenuEditaDadosContato extends AppCompatActivity implements Navigati
                 }
             }
         });
-
-
-/*
-        Button buttonBotaoMenuMinhaConta = (Button) findViewById(R.id.buttonBotaoMenuMinhaConta);
-        buttonBotaoMenuMinhaConta.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    startActivityForResult(new Intent(MenuEditaFixo.this, MenuPrincipal.class), 0);
-                    finish();
-                } catch (Exception e) {
-                    System.err.println(e);
-                }
-            }
-        });
-
-        LinearLayout buttonBotaEditarFixo = (LinearLayout) findViewById(R.id.linearBotaoEditar);
-        buttonBotaEditarFixo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    editaCadastro.setCodCli(Integer.parseInt(usuario.getCodigo()));
-                    editaCadastro.setFixo(editTextFoneCliente.getText().toString());
-                    usuDao.editaFoneCliente(editaCadastro);
-
-                    Toast.makeText(getApplicationContext(), "Salvo!", Toast.LENGTH_SHORT).show();
-
-                    startActivityForResult(new Intent(MenuEditaFixo.this, MenuMinhaConta.class), 0);
-                    finish();
-                } catch (Exception e) {
-                    System.err.println(e);
-                }
-            }
-        });
-*/
-
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
     /*    ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);

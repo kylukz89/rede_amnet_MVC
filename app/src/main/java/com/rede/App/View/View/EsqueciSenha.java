@@ -83,11 +83,6 @@ public class EsqueciSenha extends AppCompatActivity {
 
                         new AsyncTaskEsqueciSenha().execute(altsen);
 
-//                        if (new AlteraSenhaDAO().setEnviarSenhaParaEmail(altsen)) {
-//                            Intent i = new Intent(EsqueciSenha.this, MainActivity.class);
-//                            startActivity(i);
-//                            finish();
-//                        }
                     } else {
                         Toast.makeText(getApplicationContext(), "Preenche corretamente o campo! ", Toast.LENGTH_SHORT).show();
                     }

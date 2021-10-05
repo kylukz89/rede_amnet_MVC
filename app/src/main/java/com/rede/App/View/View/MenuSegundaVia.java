@@ -514,7 +514,6 @@ public class MenuSegundaVia extends AppCompatActivity implements NavigationView.
                 try {
                     // Reproduz o efeito de vibrar o celular
                     ControladorInterface.setClickBotao(getApplicationContext());
-//                    show.dismiss();
                     if (!Boolean.parseBoolean(new AsyncTaskParametrosBotoes().execute(2).get() + "")) {
                         ////// AVISO //////
                         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MenuSegundaVia.this);
@@ -579,12 +578,6 @@ public class MenuSegundaVia extends AppCompatActivity implements NavigationView.
                                         } else {
                                             Toast.makeText(getApplicationContext(), "Não é possível pagar por crédito há mais de " + qtsDias + " dias! (" + String.valueOf(titulo.getDadosDias().get(indexListaFatura)) + " dias)", Toast.LENGTH_SHORT).show();
                                         }
-                                        //} else {
-                                        //    Toast.makeText(getApplicationContext(), "Você não possui permissão para pagar fatura com cartão! \nFavor entrar em contato com suporte!", Toast.LENGTH_SHORT).show();
-                                        //}
-                                        //                                    } else {
-                                        //                                        Toast.makeText(getApplicationContext(), "Este tipo de fatura não pode ser paga por crédito, apenas boleto!", Toast.LENGTH_SHORT).show();
-                                        //                                    }
                                     }
                                 });
                         // create alert dialog
