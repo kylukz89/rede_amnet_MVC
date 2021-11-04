@@ -6,7 +6,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:animationCache="false"
-    android:background="@drawable/logintelapng"
+    android:background="@drawable/logintelapng_so_america"
     android:drawingCacheQuality="auto"
     android:orientation="vertical"
     android:paddingLeft="10dp"

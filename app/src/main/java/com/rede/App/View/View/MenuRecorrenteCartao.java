@@ -167,7 +167,6 @@ public class MenuRecorrenteCartao extends AppCompatActivity implements Navigatio
             }.getClass().getEnclosingMethod().getName() + " ERRO MSG: " + e.getMessage() + " STACKTRACE: " + e.getStackTrace().toString(), usuario.getCodigo(), Ferramentas.getMarcaModeloDispositivo(Splash.ctx));
         }
         // Botão que redireciona para a tela de cadastro de novo cartão
-        buttonBotaoCadastrarNovoCartaoVindi = (Button) findViewById(R.id.buttonBotaoCadastrarNovoCartaoVindi);
         buttonBotaoCadastrarNovoCartaoVindi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

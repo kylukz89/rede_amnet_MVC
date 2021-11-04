@@ -39,12 +39,6 @@ public class PagamentosDAO {
      * @date 26/01/2021
      */
     public String[] setPagarFaturaMensalidadeCartaoCreditoOuBoleto(PagamentoCartao pgcartao) {
-
-        System.out.println("====================> " + pgcartao.getCodigoCliente());
-        System.out.println("====================> " + pgcartao.getCodigoContrato());
-        System.out.println("====================> " + pgcartao.getCodigoFatura());
-        System.out.println("====================> " + pgcartao.getValor());
-
         String[] dados = new String[3];
         Uri.Builder paramsBuilder = new Uri.Builder()
                 .appendQueryParameter("codclie", pgcartao.getCodigoCliente())

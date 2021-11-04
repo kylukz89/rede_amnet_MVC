@@ -6,7 +6,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.widget.Button;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
@@ -56,6 +59,18 @@ public class Splash extends AppCompatActivity implements LifecycleObserver {
         } catch (Exception e) {
             AppLogErroDAO.gravaErroLOGServidor("-", "Splash "+e.toString(), "0", Ferramentas.getMarcaModeloDispositivo(Splash.ctx));
         }
+
+//        Button crashButton = new Button(this);
+//        crashButton.setText("Test Crash");
+//        crashButton.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View view) {
+//                throw new RuntimeException("Test Crash"); // Force a crash
+//            }
+//        });
+//
+//        addContentView(crashButton, new ViewGroup.LayoutParams(
+//                ViewGroup.LayoutParams.MATCH_PARENT,
+//                ViewGroup.LayoutParams.WRAP_CONTENT));
 
         ////////////////////////////////////////////////////////
         //////////////////////// 2º PLANO //////////////////////

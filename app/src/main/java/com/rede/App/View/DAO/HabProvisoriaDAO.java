@@ -62,7 +62,6 @@ public class HabProvisoriaDAO {
         return hprov;
     }
 
-
     /**
      * Habilita plano suspenso por débito
      */
@@ -80,5 +79,4 @@ public class HabProvisoriaDAO {
             System.err.println(e);
         }
     }
-
 }
