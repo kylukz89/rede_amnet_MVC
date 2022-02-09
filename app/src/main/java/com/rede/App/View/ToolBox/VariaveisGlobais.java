@@ -30,7 +30,7 @@ public abstract class VariaveisGlobais {
     //////////////////////
     // Controle de versionamento
     public static final int VERSAO_DB = 45;
-    public static int[] VERSAO_APP_LOCAL = {13, 0, 0}; // Para exibição
+    public static int[] VERSAO_APP_LOCAL = {13, 0, 1}; // Para exibição
     public static String VERSAO = Arrays.toString(VERSAO_APP_LOCAL).trim().replace(",", ".").replace("[", "").replace("]", ""); // Para exibição
     public static String VERSAO_NOME = "SIMETRA";
     //////////////////////
